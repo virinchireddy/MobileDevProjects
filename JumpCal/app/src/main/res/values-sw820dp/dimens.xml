@@ -1,0 +1,72 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="top_logo_width">200dp</dimen>
+    <dimen name="top_logo_height">35dp</dimen>
+
+    <!-- middle layout info -->
+    <dimen name="image_width">200dp</dimen>
+    <dimen name="image_height">150dp</dimen>
+
+
+    <!-- for Text Size dimenssions -->
+    <dimen name="textsize_five">5sp</dimen>
+    <dimen name="textsize_ten">10sp</dimen>
+    <dimen name="textsize_thirteen">13sp</dimen>
+    <dimen name="textsize_fifteen">15sp</dimen>
+    <dimen name="textsize_sixteen">16sp</dimen>
+    <dimen name="textsize_eighteen">18sp</dimen>
+    <dimen name="textsize_twenty">20sp</dimen>
+    <dimen name="textsize_twentythree">23sp</dimen>
+    <dimen name="textsize_twentyfive">25sp</dimen>
+    <dimen name="textsize_thirty">30sp</dimen>
+    <dimen name="textsize_fifty">50sp</dimen>
+
+    <!-- for Spacing dimenssions -->
+    <dimen name="two">2dp</dimen>
+    <dimen name="three">3dp</dimen>
+    <dimen name="five">5dp</dimen>
+    <dimen name="six">6dp</dimen>
+    <dimen name="seven">7dp</dimen>
+    <dimen name="sevenandhalf">7.5dp</dimen>
+    <dimen name="eight">8dp</dimen>
+    <dimen name="ten">10dp</dimen>
+    <dimen name="thirteen">13dp</dimen>
+    <dimen name="fifteen">15dp</dimen>
+    <dimen name="sixteen">16dp</dimen>
+    <dimen name="twenty">20dp</dimen>
+    <dimen name="twentytwo">22dp</dimen>
+    <dimen name="twentyfive">25dp</dimen>
+    <dimen name="twentysix">26dp</dimen>
+    <dimen name="thirty">30dp</dimen>
+    <dimen name="thirtyfive">35dp</dimen>
+    <dimen name="forty">40dp</dimen>
+    <dimen name="fortyfive">45dp</dimen>
+    <dimen name="fifty">50dp</dimen>
+    <dimen name="fiftyfive">55dp</dimen>
+    <dimen name="sixty">60dp</dimen>
+    <dimen name="sixtyfive">65dp</dimen>
+    <dimen name="eighty">80dp</dimen>
+    <dimen name="ninety">90dp</dimen>
+    <dimen name="hundred">100dp</dimen>
+    <dimen name="onesixty">160dp</dimen>
+    <dimen name="oneeighty">180dp</dimen>
+    <dimen name="twohundred">200dp</dimen>
+    <dimen name="twohundredfifty">250dp</dimen>
+    <dimen name="threetwentyfive">325dp</dimen>
+    <dimen name="threehundredthirty">330dp</dimen>
+
+
+
+    <dimen name="padding_xxxsmall">3dp</dimen>
+    <dimen name="padding_xxsmall">5dp</dimen>
+    <dimen name="padding_xsmall">7.5dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="padding_xstandard">13dp</dimen>
+    <dimen name="padding_standard">16dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="padding_xlarge">22dp</dimen>
+    <dimen name="padding_xxlarge">26dp</dimen>
+    <dimen name="padding_xxxlarge">30dp</dimen>
+</resources>

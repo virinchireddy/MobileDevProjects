@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnFacilityname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/padding_xxsmall"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginRight="@dimen/padding_small"
+        android:background="@drawable/spinner_selector_not_selected"
+        android:textAllCaps="false"
+        android:textColor="@color/new_selected"
+        android:gravity="left|center_vertical"
+        android:textSize="@dimen/text_size_large"
+        android:paddingLeft="@dimen/padding_small"/>
+
+</LinearLayout>

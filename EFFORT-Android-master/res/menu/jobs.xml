@@ -1,0 +1,52 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <group android:id="@+id/jobsGroup" >
+        <item
+            android:id="@+id/jobActions"
+            android:icon="@drawable/ic_action_overflow"
+            android:orderInCategory="110"
+            android:title="@string/actions"
+            app:showAsAction="always|withText">
+            <menu>
+                <item
+                    android:id="@+id/addJob"
+                    android:orderInCategory="111"
+                    android:title="@string/add_job"
+                    app:showAsAction="always|withText"/>
+                <item
+                    android:id="@+id/markAllJobsAsRead"
+                    android:orderInCategory="112"
+                    android:title="@string/mark_all_jobs_as_read"
+                    app:showAsAction="always|withText"/>
+                <item
+                    android:id="@+id/markAllJobsAsUnread"
+                    android:orderInCategory="113"
+                    android:title="@string/mark_all_jobs_as_unread"
+                    app:showAsAction="always|withText"/>
+            </menu>
+        </item>
+    </group>
+    <group android:id="@+id/invitationsGroup" >
+        <item
+            android:id="@+id/invitationActions"
+            android:icon="@drawable/ic_action_overflow"
+            android:orderInCategory="110"
+            android:title="@string/actions"
+            app:showAsAction="always|withText">
+            <menu>
+                <item
+                    android:id="@+id/markAllInvitationsAsRead"
+                    android:orderInCategory="112"
+                    android:title="@string/mark_all_invitations_as_read"
+                    app:showAsAction="always|withText"/>
+                <item
+                    android:id="@+id/markAllInvitationsAsUnread"
+                    android:orderInCategory="113"
+                    android:title="@string/mark_all_invitations_as_unread"
+                    app:showAsAction="always|withText"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>

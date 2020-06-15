@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liMainView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/ivProfilePhoto"
+                    android:layout_width="@dimen/bar_photo_width"
+                    android:layout_height="@dimen/bar_photo_height"
+                    android:layout_margin="@dimen/padding_small"
+                    android:background="@drawable/add_profile" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    
+                    android:textColor="@color/login"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/padding_small"
+                        android:paddingTop="@dimen/padding_small"
+                        android:singleLine="true"
+                        android:text="Photos in Gallery :"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <TextView
+                        android:id="@+id/tvPhotosCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="3"
+                        android:padding="@dimen/padding_small"
+                        android:text="0"
+                        android:textColor="@color/black" 
+                        android:textSize="@dimen/text_size_standard"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/padding_small"
+                        android:paddingTop="@dimen/padding_small"
+                        android:singleLine="true"
+                        android:text="Status : "
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <TextView
+                        android:id="@+id/tvStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_round_corners"
+                        android:drawableRight="@drawable/arrow"
+                        android:padding="@dimen/padding_small"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_standard" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginTop="@dimen/padding_small"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnAddPhotos"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/check_in_button_height"
+                android:background="@drawable/login_button_selector"
+                android:paddingLeft="@dimen/padding_xxsmall"
+                android:paddingRight="@dimen/padding_xxsmall"
+                android:text="Change Photo"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_standard"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnEditUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/check_in_button_height"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:background="@drawable/login_button_selector"
+                android:paddingLeft="@dimen/padding_xxsmall"
+                android:paddingRight="@dimen/padding_xxsmall"
+                android:text="Edit Nickname"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_standard"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnChangePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/check_in_button_height"
+            android:layout_margin="@dimen/padding_small"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:background="@drawable/login_button_selector"
+            android:padding="@dimen/padding_small"
+            android:text="Change password"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_standard"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_xxsmall"
+            android:background="@color/blue"
+            android:drawableRight="@drawable/arrow_side"
+            android:padding="@dimen/padding_small"
+            android:text="Edit My Profile"
+            android:textColor="@color/white" 
+            android:textSize="@dimen/text_size_standard"/>
+
+        <TextView
+            android:id="@+id/tvManagePhotos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_xxsmall"
+            android:background="@color/blue"
+            android:drawableRight="@drawable/arrow_side"
+            android:padding="@dimen/padding_small"
+            android:text="Manage Photos"
+            android:textColor="@color/white" 
+            android:textSize="@dimen/text_size_standard"/>
+    </LinearLayout>
+
+</LinearLayout>

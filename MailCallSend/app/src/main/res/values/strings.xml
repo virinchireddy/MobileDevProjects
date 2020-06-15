@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MailCallSend</string>
+    <string name="googlemapkey" templateMergeStrategy="preserve" translatable="false">AIzaSyCaozaGBcRTKBUB2oG25YUdU1JWLOznaJs</string>
+
+</resources>

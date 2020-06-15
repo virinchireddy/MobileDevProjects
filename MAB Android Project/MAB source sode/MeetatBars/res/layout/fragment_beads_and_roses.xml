@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Recived"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Sent"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Brought"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Available"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Roses : "
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/buy_roses_rounded_corner"
+            android:gravity="center"
+            android:text="20"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/buy_roses_rounded_corner"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/buy_roses_rounded_corner"
+            android:gravity="center"
+            android:text="30"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/buy_roses_rounded_corner"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Beeds : "
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/buy_beeds_rounded_corner"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/buy_beeds_rounded_corner"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/buy_beeds_rounded_corner"
+            android:gravity="center"
+            android:text="30"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/buy_beeds_rounded_corner"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal" 
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/login_button_selector"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Buy More"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnSell"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/login_button_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Sell"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

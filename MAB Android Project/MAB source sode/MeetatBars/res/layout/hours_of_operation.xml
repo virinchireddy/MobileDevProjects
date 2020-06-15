@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_standard"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnOpeningHours"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/check_in_button_height"
+                    android:layout_weight="0.5"
+                    android:background="@color/login"
+                    android:text="Opening Hours"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_standard" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <Button
+                    android:id="@+id/btnClosingHours"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/check_in_button_height"
+                    android:layout_weight="0.5"
+                    android:background="@color/login_pressed"
+                    android:text="Closing Hours"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_standard" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/sBarStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/padding_standard"
+                android:padding="@dimen/padding_xsmall"
+                android:showText="true"
+                android:textOff="Opening Hours"
+                android:textOn="Closing Hours"
+                android:textSize="@dimen/padding_standard"
+                android:visibility="gone" />
+
+            <TimePicker
+                android:id="@+id/tpOpeningHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/padding_standard" />
+
+            <TimePicker
+                android:id="@+id/tpClosingHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/padding_standard"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_small"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnCloseToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/check_in_button_height"
+                    android:background="@drawable/login_button_selector"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:paddingRight="@dimen/padding_small"
+                    android:text="Closed Today"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_small" />
+
+                <Button
+                    android:id="@+id/btnClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/check_in_button_height"
+                    android:layout_marginLeft="@dimen/padding_xxsmall"
+                    android:background="@drawable/login_button_selector"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:paddingRight="@dimen/padding_small"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_small" />
+
+                <Button
+                    android:id="@+id/btnOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/check_in_button_height"
+                    android:layout_marginLeft="@dimen/padding_xxsmall"
+                    android:background="@drawable/login_button_selector"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:paddingRight="@dimen/padding_small"
+                    android:text="Set"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

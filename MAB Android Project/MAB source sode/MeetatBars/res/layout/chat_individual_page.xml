@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/chat_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="horizontal" 
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/padding_xxsmall"
+        android:paddingBottom="@dimen/padding_xxsmall">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/padding_large"
+            android:layout_height="@dimen/padding_large"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:layout_marginRight="@dimen/padding_small"
+            android:background="@drawable/back_image_selector"
+            android:onClick="back"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/ivFriendProfile"
+            android:layout_width="@dimen/bar_user_image_width"
+            android:layout_height="@dimen/bar_user_image_width"
+            android:clickable="true"
+           />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rvChatIndividual"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:context=".ChatIndividualPage" 
+        android:padding="@dimen/padding_xxsmall"/>
+
+    <TextView
+        android:id="@+id/tvEmptyView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="No history found"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_xxsmall"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp" >
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:maxHeight="80dp" />
+
+        <ImageButton
+            android:id="@+id/btnsendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/send_button" />
+    </LinearLayout>
+
+</LinearLayout>

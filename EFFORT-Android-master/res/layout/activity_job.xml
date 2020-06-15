@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context=".JobActivity" >
+
+    <fragment
+        android:id="@+id/viewJobFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="in.spoors.effort1.ViewJobFragment" />
+
+    <fragment
+        android:id="@+id/editJobFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="in.spoors.effort1.EditJobFragment" />
+
+    <fragment
+        android:id="@+id/stagesFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="in.spoors.effort1.StagesFragment" />
+
+    <fragment
+        android:id="@+id/notesFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="in.spoors.effort1.NotesFragment" />
+
+    <fragment
+        android:id="@+id/proofsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="in.spoors.effort1.ProofsFragment" />
+
+    <!--
+         <fragment
+        android:id="@+id/extrasFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="in.spoors.effort1.ExtrasFragment" />
+    -->
+
+</RelativeLayout>

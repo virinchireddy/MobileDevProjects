@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/sync"
+        android:icon="@drawable/ic_navigation_refresh"
+        android:orderInCategory="100"
+        android:title="@string/sync"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/actions"
+        android:icon="@drawable/ic_action_overflow"
+        android:orderInCategory="110"
+        android:title="@string/actions"
+        app:showAsAction="always|withText">
+        <menu>
+            <item
+                android:id="@+id/addCustomer"
+                android:orderInCategory="111"
+                android:title="@string/add_customer"
+                app:showAsAction="always|withText"/>
+            <item
+                android:id="@+id/addJob"
+                android:orderInCategory="112"
+                android:title="@string/add_job"
+                app:showAsAction="always|withText"/>
+            <item
+                android:id="@+id/submitForm"
+                android:orderInCategory="113"
+                android:title="@string/submit_form"
+                app:showAsAction="always|withText"/>
+            <item
+                android:id="@+id/applyForLeave"
+                android:orderInCategory="114"
+                android:title="@string/apply_for_leave"
+                app:showAsAction="always|withText"/>
+            <item
+                android:id="@+id/markAllJobsAsRead"
+                android:orderInCategory="115"
+                android:title="@string/mark_all_jobs_as_read"
+                app:showAsAction="always|withText"/>
+            <item
+                android:id="@+id/markAllJobsAsUnread"
+                android:orderInCategory="116"
+                android:title="@string/mark_all_jobs_as_unread"
+                app:showAsAction="always|withText"/>
+        </menu>
+    </item>
+
+</menu>

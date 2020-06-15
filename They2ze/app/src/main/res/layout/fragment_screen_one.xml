@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:src="@mipmap/they2ze_logo_virti" />
+
+    <TextView
+        android:id="@+id/tvAppName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/first_intro_screen_t"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xxxlarge"
+        android:textStyle="bold" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="3dp" ></View>
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        android:maxLines="7"
+        android:scrollbars = "vertical"/>
+
+    <!-- <TextView
+         android:id="@+id/tvAppName2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+         android:gravity="center_horizontal"
+         android:text="@string/first_intro_screen_te"
+         android:textColor="@color/white"
+         android:textSize="@dimen/text_size_xxxlarge" />
+
+     <TextView
+         android:id="@+id/tvAppName3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="35dp"
+         android:layout_marginTop="5dp"
+         android:gravity="center_horizontal"
+         android:text="@string/first_intro_screen_tex"
+         android:textColor="@color/white"
+         android:textSize="@dimen/text_size_xxxlarge" />
+ -->
+
+    <!--<Button
+
+        android:id="@+id/tvSkip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:background="@drawable/next_button_introscreen"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_standard"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large" />-->
+
+</LinearLayout>

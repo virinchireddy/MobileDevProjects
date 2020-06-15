@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="120dp">
+
+                <com.om.virinchi.ricelake.Helper.CircularImageView
+                    android:id="@+id/ivUploadimage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/five"
+                    android:layout_marginBottom="@dimen/eighty"
+                    android:src="@mipmap/patient_signup" />
+
+
+                <ImageView
+                    android:id="@+id/ivCamera"
+                    android:layout_width="@dimen/twenty"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_alignTop="@+id/ivUploadimage"
+                    android:layout_margin="@dimen/five"
+                    android:layout_toRightOf="@+id/ivUploadimage"
+                    android:src="@mipmap/change_photo" />
+
+                <TextView
+                    android:id="@+id/tvSaveimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ivUploadimage"
+                    android:layout_toEndOf="@+id/ivUploadimage"
+                    android:text="@string/saveimage"
+                    android:textColor="@color/blue" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/btnChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:layout_marginTop="@dimen/six"
+                    android:background="@drawable/login_button_selector"
+                    android:text="Change Password"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_fifteen" />
+
+                <LinearLayout
+                    android:id="@+id/liChangepassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/etOldpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/ten"
+                        android:layout_marginRight="@dimen/ten"
+                        android:layout_marginTop="@dimen/six"
+                        android:background="@drawable/login_using_border"
+                        android:cursorVisible="true"
+                        android:drawableLeft="@mipmap/password"
+                        android:drawablePadding="@dimen/padding_xxsmall"
+                        android:hint="Current Password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/padding_small"
+                        android:singleLine="true"
+                        android:textSize="@dimen/textsize_fifteen"></EditText>
+
+                    <EditText
+                        android:id="@+id/etNewpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/ten"
+                        android:layout_marginRight="@dimen/ten"
+                        android:layout_marginTop="@dimen/six"
+                        android:background="@drawable/login_using_border"
+                        android:cursorVisible="true"
+                        android:drawableLeft="@mipmap/password"
+                        android:drawablePadding="@dimen/padding_xxsmall"
+                        android:hint="New Password"
+
+                        android:inputType="textPassword"
+                        android:maxLength="12"
+                        android:padding="@dimen/padding_small"
+                        android:singleLine="true"
+                        android:textSize="@dimen/textsize_fifteen"></EditText>
+
+                    <EditText
+                        android:id="@+id/etCnnewpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/ten"
+                        android:layout_marginRight="@dimen/ten"
+                        android:layout_marginTop="@dimen/six"
+                        android:background="@drawable/login_using_border"
+                        android:cursorVisible="true"
+                        android:drawableLeft="@mipmap/password"
+                        android:drawablePadding="@dimen/padding_xxsmall"
+                        android:hint="Confirm New Password"
+                        android:inputType="textPassword"
+                        android:maxLength="12"
+                        android:padding="@dimen/padding_small"
+                        android:singleLine="true"
+                        android:textSize="@dimen/textsize_fifteen"></EditText>
+
+                    <Button
+                        android:id="@+id/btnPasswordsavechanges"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/ten"
+                        android:layout_marginRight="@dimen/ten"
+                        android:layout_marginTop="@dimen/six"
+                        android:background="@drawable/signup_button_selector"
+                        android:text="Save Changes"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_fifteen" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnUpdatedetailss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:layout_marginTop="@dimen/six"
+                    android:background="@drawable/update_details_selector"
+                    android:text="Update Details"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_fifteen" />
+
+                <LinearLayout
+                    android:id="@+id/liUpdatedetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/ten"
+                        android:layout_marginRight="@dimen/ten"
+                        android:layout_marginTop="@dimen/six"
+                        android:background="@drawable/login_using_border"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:drawableLeft="@mipmap/email"
+                        android:drawablePadding="@dimen/padding_xxsmall"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="Email"
+                        android:padding="@dimen/padding_small"
+                        android:singleLine="true"
+                        android:textSize="@dimen/textsize_fifteen"></EditText>
+
+                    <EditText
+
+                        android:id="@+id/etPhoneno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/ten"
+                        android:layout_marginRight="@dimen/ten"
+                        android:layout_marginTop="@dimen/six"
+                        android:background="@drawable/login_using_border"
+                        android:cursorVisible="true"
+                        android:drawableLeft="@mipmap/profile_phone"
+                        android:drawablePadding="@dimen/padding_xxsmall"
+                        android:hint="Phone no"
+                        android:inputType="phone"
+                        android:maxLength="12"
+                        android:padding="@dimen/padding_small"
+                        android:singleLine="true"
+                        android:textSize="@dimen/textsize_fifteen"></EditText>
+
+                    <Button
+                        android:id="@+id/btnUpdatesavechanges"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/ten"
+                        android:layout_marginRight="@dimen/ten"
+                        android:layout_marginTop="@dimen/six"
+                        android:background="@drawable/signup_button_selector"
+                        android:text="Save Changes"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_fifteen" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:layout_marginTop="@dimen/six"
+                    android:background="@drawable/red_btnbackground_selector"
+                    android:text="Log out"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_fifteen" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"></View>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

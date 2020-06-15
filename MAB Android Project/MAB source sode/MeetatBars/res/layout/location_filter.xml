@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_stoke"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_small" >
+
+    <LinearLayout
+        android:id="@+id/liLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/ivLocation"
+            android:layout_width="@dimen/padding_small"
+            android:layout_height="@dimen/padding_small"
+            android:layout_marginLeft="@dimen/padding_xxxsmall"
+            android:layout_marginRight="@dimen/padding_xxxsmall"
+            android:src="@drawable/arrow_side" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_xxsmall"
+            android:text="Location"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_xlarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liLocationFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_small"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_xxsmall"
+            android:background="@drawable/edittext_round_corners"
+            android:hint="City"
+            android:padding="@dimen/padding_xxsmall"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_standard" />
+
+        <EditText
+            android:id="@+id/etState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_xxsmall"
+            android:background="@drawable/edittext_round_corners"
+            android:hint="State"
+            android:padding="@dimen/padding_xxsmall"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_standard" />
+
+        <EditText
+            android:id="@+id/etDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_xxsmall"
+            android:background="@drawable/edittext_round_corners"
+            android:hint="Distance(Miles)"
+            android:inputType="number"
+            android:padding="@dimen/padding_xxsmall"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_standard" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!--
+         <color name="statusBarBackground">#aa000000</color>
+    <color name="statusBarText">#aaffffff</color>
+    -->
+    <color name="statusBarBackground">#ffdddddd</color>
+    <color name="statusBarText">#ff000000</color>
+    <color name="statusSeparatorBackground">#ffb1b1b1</color>
+    <color name="sectionBackground">#ff000000</color>
+    <color name="sectionText">#ffffffff</color>
+    <color name="separatorBackground">#ffcccccc</color>
+    <color name="separatorBackgroundWhite">#ffffff</color>
+    <color name="activeFormTextColor">#ff000000</color>
+    <color name="drawerBackgroundColor">#49494c</color>
+    <color name="drawerSeparatorBackground">#ff272727</color>
+    <color name="normalDrawerItemBackgroundColor">#49494c</color>
+    <color name="activeDrawerItemBackgroundColor">#222222</color>
+    <color name="drawerCompanyBackground">#7C9FB0</color>
+    <color name="green">#99f910</color>
+    <color name="blue">#084cfa</color>
+    <color name="orange">#ff4c06</color>
+    <color name="red">#eb0c31</color>
+    <color name="black">#000000</color>
+    <color name="common_label_route_plan">#FFAAAAAA</color>
+    <color name="common_label_record_blue">#FF33B5E5</color>
+
+</resources>

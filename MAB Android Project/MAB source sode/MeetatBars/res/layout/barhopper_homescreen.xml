@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#4d90e0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="@dimen/padding_xxlarge"
+                android:layout_height="@dimen/padding_xxlarge"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back_image_selector"
+                android:onClick="back"
+                android:src="@drawable/back" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                   android:layout_width="@dimen/top_logo_width"
+                android:layout_height="@dimen/top_logo_height"
+                    android:layout_gravity="center"
+                    android:onClick="menuScreen"
+                    android:src="@drawable/logo" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/padding_large"
+                android:layout_marginRight="10dp"
+                android:onClick="menu"
+                android:src="@drawable/menu" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.9"
+        android:orientation="vertical" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="@color/bottom_band"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:weightSum="4" >
+
+        <LinearLayout
+            android:id="@+id/liBars"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:onClick="bars"
+            android:orientation="vertical"
+            android:padding="3dp" >
+
+            <ImageView
+                android:id="@+id/ivBars"
+                android:layout_width="@dimen/padding_xxlarge"
+                android:layout_height="@dimen/padding_xxlarge"
+                android:src="@drawable/glass_white" />
+
+            <TextView
+                android:id="@+id/tvBars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bars"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_standard" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:onClick="friends"
+            android:orientation="vertical"
+            android:padding="3dp" >
+
+            <ImageView
+                android:id="@+id/ivFriends"
+                android:layout_width="@dimen/padding_xxlarge"
+                android:layout_height="@dimen/padding_xxlarge"
+                android:src="@drawable/meet_white" />
+
+            <TextView
+                android:id="@+id/tvFriends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meet"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_standard" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:onClick="Notification"
+            android:orientation="vertical"
+            android:padding="3dp" >
+
+            <ImageView
+                android:id="@+id/ivNotification"
+                android:layout_width="@dimen/padding_xxlarge"
+                android:layout_height="@dimen/padding_xxlarge"
+                android:src="@drawable/notification_white" />
+
+            <TextView
+                android:id="@+id/tvNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Notification"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_standard" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:onClick="Chat"
+            android:orientation="vertical"
+            android:padding="3dp" >
+
+            <ImageView
+                android:id="@+id/ivChat"
+                android:layout_width="@dimen/padding_xxlarge"
+                android:layout_height="@dimen/padding_xxlarge"
+                android:src="@drawable/chat_white" />
+
+            <TextView
+                android:id="@+id/tvChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Chat"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_standard" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

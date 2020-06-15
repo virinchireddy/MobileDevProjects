@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_xxsmall"
+        android:layout_marginTop="@dimen/padding_xxsmall"
+        android:background="@drawable/edittext_round_corners"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_small">
+
+         <TextView
+            android:id="@+id/tvEPTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_xsmall"
+            android:text="Rock Night"
+            android:textColor="@color/black"
+            android:textStyle="bold" 
+            android:textSize="@dimen/text_size_standard"/>
+		<TextView
+            android:id="@+id/tvEPMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_xsmall"
+            android:text="message"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_standard" />
+		
+        <ImageView
+            android:id="@+id/ivEPImage"
+            android:layout_width="@dimen/promotion_photo_width"
+            android:layout_height="@dimen/hopper_profile_height"
+            android:background="@drawable/bar3" />
+
+       
+    </LinearLayout>
+
+</LinearLayout>

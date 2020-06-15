@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:isScrollContainer="false"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="First Name:"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/edittext_round_corners"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="textNoSuggestions"
+                        android:lines="1"
+                        android:padding="@dimen/padding_xsmall"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_standard" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="Last Name:"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <EditText
+                        android:id="@+id/etLastName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/edittext_round_corners"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="textNoSuggestions"
+                        android:lines="1"
+                        android:padding="@dimen/padding_xsmall"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_standard" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="Address:"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <EditText
+                        android:id="@+id/etAddress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/edittext_round_corners"
+                        android:lines="1"
+                        android:padding="@dimen/padding_xsmall"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_standard" />
+                </TableRow>
+
+                
+                  <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="City:"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <EditText
+                        android:id="@+id/etCity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/edittext_round_corners"
+                        android:lines="1"
+                        android:padding="@dimen/padding_xsmall"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_standard" />
+                </TableRow>
+                  <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="State:"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <EditText
+                        android:id="@+id/etState"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/edittext_round_corners"
+                        android:lines="1"
+                        android:padding="@dimen/padding_xsmall"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_standard" />
+                </TableRow>
+                  
+                
+                    <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="Zipcode:"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <EditText
+                        android:id="@+id/etZipcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/edittext_round_corners"
+                        android:lines="1"
+                        android:padding="@dimen/padding_xsmall"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_standard" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="Tag Line:"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <EditText
+                        android:id="@+id/etTagLine"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/edittext_round_corners"
+                        android:lines="3"
+                        android:maxLength="160"
+                        android:padding="@dimen/padding_xsmall"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_standard" />
+                </TableRow>
+
+                
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="Interests:"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <EditText
+                        android:id="@+id/etInterests"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/edittext_round_corners"
+                        android:lines="3"
+                        android:padding="@dimen/padding_xsmall"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_standard" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="Hobbies:"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <EditText
+                        android:id="@+id/etHobbies"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/edittext_round_corners"
+                        android:lines="3"
+                        android:padding="@dimen/padding_xsmall"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_standard" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="TV Shows :"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <EditText
+                        android:id="@+id/etTvShows"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/edittext_round_corners"
+                        android:lines="3"
+                        android:padding="@dimen/padding_xsmall"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_standard" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="For Fun :"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <EditText
+                        android:id="@+id/etForFun"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/edittext_round_corners"
+                        android:lines="3"
+                        android:padding="@dimen/padding_xsmall"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_standard" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:gravity="right"
+                    android:weightSum="1" >
+
+                    <Button
+                        android:id="@+id/btnForFun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/check_in_button_height"
+                        android:background="@drawable/login_button_selector"
+                        android:paddingLeft="@dimen/padding_small"
+                        android:paddingRight="@dimen/padding_small"
+                        android:singleLine="true"
+                        android:text="Select"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="Favourite Bar :"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <EditText
+                        android:id="@+id/etfavorite_bar_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/edittext_round_corners"
+                        android:lines="3"
+                        android:padding="@dimen/padding_xsmall"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_standard" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btnCheckBars"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/check_in_button_height"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/padding_small"
+                android:background="@drawable/login_button_selector"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:text="CheckBars"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What do you want people to know about you?(Max 300 char)"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <EditText
+                        android:id="@+id/etabout_me"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_small"
+                        android:background="@drawable/edittext_round_corners"
+                        android:gravity="bottom"
+                        android:lines="3"
+                        android:maxLength="300"
+                        android:padding="@dimen/padding_xsmall"
+                        android:scrollbars="vertical"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_small"
+                        android:text="What do you find most attractive in a person?"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <EditText
+                        android:id="@+id/etAttractionInPerson"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_small"
+                        android:background="@drawable/edittext_round_corners"
+                        android:padding="@dimen/padding_xsmall"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_small"
+                        android:text="What is your favorite drink?"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <EditText
+                        android:id="@+id/etFavoriteDrink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_small"
+                        android:background="@drawable/edittext_round_corners"
+                        android:padding="@dimen/padding_xsmall"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_standard" />
+                </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/login_pressed" />
+
+            <LinearLayout
+                android:id="@+id/liQuestion1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/padding_small"
+                android:layout_marginLeft="@dimen/padding_standard"
+                android:layout_marginRight="@dimen/padding_standard"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/padding_xxsmall"
+                    android:text="@string/question1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_standard" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/padding_xxsmall"
+                    android:orientation="horizontal" >
+
+                    <NumberPicker
+                        android:id="@+id/npHightFt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/ft"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <NumberPicker
+                        android:id="@+id/npHightIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/inches"
+                        android:textSize="@dimen/text_size_standard" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/login_pressed" />
+
+            <LinearLayout
+                android:id="@+id/liQuestion2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/padding_small"
+                android:layout_marginLeft="@dimen/padding_standard"
+                android:layout_marginRight="@dimen/padding_standard"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/padding_xxsmall"
+                    android:padding="@dimen/padding_xxsmall"
+                    android:text="@string/question9"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_standard" />
+
+                <NumberPicker
+                    android:id="@+id/npIncome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/login_pressed" />
+
+            <LinearLayout
+                android:id="@+id/liQuestion3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/padding_small"
+                android:layout_marginLeft="@dimen/padding_standard"
+                android:layout_marginRight="@dimen/padding_standard"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/padding_xxsmall"
+                    android:padding="@dimen/padding_xxsmall"
+                    android:text="@string/question10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_standard" />
+
+                <NumberPicker
+                    android:id="@+id/npAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvEditMatchme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/padding_xxsmall"
+                android:clickable="true"
+                android:padding="@dimen/padding_xxsmall"
+                android:text="@string/edit_matchme"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_standard" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_small" >
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/check_in_button_height"
+            android:layout_marginRight="@dimen/padding_small"
+            android:background="@drawable/login_button_selector"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_small"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/check_in_button_height"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:background="@drawable/login_button_selector"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_small"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+</RelativeLayout>

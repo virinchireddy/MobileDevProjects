@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/applyForLeave"
+        android:icon="@drawable/ic_content_new"
+        android:orderInCategory="100"
+        android:title="@string/apply_for_leave"
+        app:showAsAction="always|withText"/>
+
+</menu>

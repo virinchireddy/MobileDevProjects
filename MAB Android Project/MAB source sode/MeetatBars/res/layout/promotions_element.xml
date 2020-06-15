@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_xxsmall"
+        android:layout_marginRight="@dimen/padding_xxsmall"
+        android:layout_marginTop="@dimen/padding_xxsmall"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_small" >
+
+        <TextView
+            android:id="@+id/tvPromotionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_xxlarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPromotionMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="message"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="italic"
+            android:layout_marginBottom="@dimen/padding_small" 
+            android:layout_marginTop="@dimen/padding_xxsmall"/>
+
+        <ImageView
+            android:id="@+id/ivPromotionsImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hopper_profile_height"
+            android:background="@drawable/promotion_menu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_small"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvBarName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Peghouse"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_standard"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="true"
+                android:text=", California"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_standard"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

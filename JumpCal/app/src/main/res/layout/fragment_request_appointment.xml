@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_xxsmall"
+        android:layout_marginTop="@dimen/padding_large"
+        android:gravity="center_horizontal"
+        android:text="@string/book_an_appointment"
+        android:textColor="@color/new_selected"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_xxxlarge"
+        android:id="@+id/textView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_xsmall"
+                android:gravity="center_horizontal"
+                android:text="@string/click_to_schedule_appt"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_standard"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/liSpecialty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_standard"
+                android:layout_marginRight="@dimen/padding_standard"
+                android:background="@drawable/spinner_selector_not_selected"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+            
+                <Spinner
+                    android:id="@+id/spSpecialty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:spinnerMode="dialog"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/twenty"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:src="@drawable/spinner_specialty" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/five"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/liCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_standard"
+                android:layout_marginRight="@dimen/padding_standard"
+                android:background="@drawable/spinner_selector_not_selected"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <Spinner
+                    android:id="@+id/spCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:spinnerMode="dialog"
+                    />
+                 <ImageView
+                    android:layout_width="@dimen/twenty"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:src="@drawable/spinner_location" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/five"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/liPhysician"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_standard"
+                android:layout_marginRight="@dimen/padding_standard"
+                android:background="@drawable/spinner_selector_not_selected"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+               
+                <Spinner
+                    android:id="@+id/spPhysician"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:spinnerMode="dialog"
+                    />
+                
+                 <ImageView
+                    android:layout_width="@dimen/twenty"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:src="@drawable/spinner_physician" />
+                
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/five"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/liPTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_standard"
+                android:layout_marginRight="@dimen/padding_standard"
+                android:background="@drawable/spinner_selector_not_selected"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <Spinner
+                    android:id="@+id/spPTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+                    android:spinnerMode="dialog"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/twenty"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:src="@drawable/spinner_preferedtime" />
+                
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btnReqappointment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/padding_xxxlarge"
+                android:layout_marginLeft="@dimen/padding_standard"
+                android:layout_marginRight="@dimen/padding_standard"
+                android:background="@drawable/new_green_button_selector"
+                android:gravity="center"
+                android:text="@string/request_appt"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="normal"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/btnRequestedAppointment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_standard"
+                android:layout_marginRight="@dimen/padding_standard"
+                android:background="@drawable/requested_appointment_selector"
+                android:gravity="center"
+                android:text="@string/requested_appt"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="normal"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

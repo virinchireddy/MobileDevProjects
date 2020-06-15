@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edittext_round_corners"
+    android:padding="@dimen/padding_xxxlarge">
+
+<TextView
+    android:id="@+id/tvDialogueHeadding"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:textSize="@dimen/text_size_xxlarge"
+    android:textColor="@color/new_selected"
+
+    />
+
+    <TextView
+        android:id="@+id/tvDialogueMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/grey"
+        android:layout_marginTop="@dimen/button_height"
+        android:textSize="@dimen/text_size_large"
+        />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:background="@drawable/new_green_button_selector"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/button_height"
+        android:textColor="@color/white"
+        android:paddingLeft="@dimen/padding_xxxlarge"
+        android:paddingRight="@dimen/padding_xxxlarge"
+        />
+
+</LinearLayout>

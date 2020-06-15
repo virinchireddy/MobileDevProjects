@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liGeneralsafetylineitems"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="#"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:background="@color/login"
+                android:text="Reference"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="OK"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="ACT"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="NA"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="#97B6E1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="2.1"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Jobsite Postings Posted (Safety/EEO)  " />
+
+            <RadioGroup
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd10ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="10" />
+
+                <RadioButton
+                    android:id="@+id/rd10act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="10" />
+
+                <RadioButton
+                    android:id="@+id/rd10na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="10" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="#E3F2FD"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="2.2"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Jobsite Security / Theft Prevention" />
+
+            <RadioGroup
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/rd11ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="11" />
+
+                <RadioButton
+                    android:id="@+id/rd11act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="11" />
+
+                <RadioButton
+                    android:id="@+id/rd11na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="11" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="@color/item1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="2.3"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Protection Of The Public " />
+
+            <RadioGroup
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd12ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="12" />
+
+                <RadioButton
+                    android:id="@+id/rd12act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="12" />
+
+                <RadioButton
+                    android:id="@+id/rd12na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="12" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="@color/item2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="2.4"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Designated Parking - Traffic Control" />
+
+            <RadioGroup
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd13ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="13" />
+
+                <RadioButton
+                    android:id="@+id/rd13act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="13" />
+
+                <RadioButton
+                    android:id="@+id/rd13na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="13" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="@color/item1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="2.5"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="First - Aid Stocked Nothing Expired " />
+
+            <RadioGroup
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd14ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="14" />
+
+                <RadioButton
+                    android:id="@+id/rd14act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="14" />
+
+                <RadioButton
+                    android:id="@+id/rd14na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="14" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="@color/item2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="2.6"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Emergency &amp; Utility Numbers Posted" />
+
+            <RadioGroup
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd15ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="15" />
+
+                <RadioButton
+                    android:id="@+id/rd15act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="15" />
+
+                <RadioButton
+                    android:id="@+id/rd15na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="15" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="@color/item1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="2.7"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Sanitation - Toilets &amp; Driking Water" />
+
+            <RadioGroup
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd16ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="16" />
+
+                <RadioButton
+                    android:id="@+id/rd16act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="16" />
+
+                <RadioButton
+                    android:id="@+id/rd16na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="16" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/item2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="2.8"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Proper PPE Being Worn For Task " />
+
+            <RadioGroup
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd17ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="17" />
+
+                <RadioButton
+                    android:id="@+id/rd17act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="17" />
+
+                <RadioButton
+                    android:id="@+id/rd17na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="17" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="@color/item1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="2.9" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="All Required Permits Completed" />
+
+            <RadioGroup
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd18ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="18" />
+
+                <RadioButton
+                    android:id="@+id/rd18act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="18" />
+
+                <RadioButton
+                    android:id="@+id/rd18na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="18" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/item2"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:text="2.10" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.45"
+                    android:padding="5dp"
+                    android:text="Secondary Containment Labeled" />
+
+                <RadioGroup
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.30"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:tag="19"
+                        android:id="@+id/rd59ok"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="0.10" />
+
+                    <RadioButton
+                        android:tag="19"
+                        android:id="@+id/rd59act"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="0.10" />
+
+                    <RadioButton
+                        android:tag="19"
+                        android:id="@+id/rd59na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_weight="0.10" />
+                </RadioGroup>
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/default_color"
+    android:padding="@dimen/padding_large">
+
+    <TextView
+        android:id="@+id/tvAlertMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/padding_small"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/new_selected">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginRight="@dimen/padding_small"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:layout_marginTop="@dimen/padding_xxxlarge"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/padding_xxsmall"
+            android:layout_marginEnd="@dimen/padding_xxsmall"
+            android:padding="@dimen/padding_small"
+            android:textSize="@dimen/text_size_large"
+            android:background="@drawable/new_green_button_selector"
+             >
+        </Button>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:text="@string/cancel"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/padding_xxsmall"
+            android:layout_marginStart="@dimen/padding_xxsmall"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size_large"
+            android:background="@drawable/new_green_button_selector"
+          >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

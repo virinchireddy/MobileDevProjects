@@ -1,0 +1,5 @@
+include ':facebook'
+include ':meetatBars'
+include ':android-support-v7-gridlayout'
+include ':android-support-v7-appcompat'
+include ':google-play-services_lib'

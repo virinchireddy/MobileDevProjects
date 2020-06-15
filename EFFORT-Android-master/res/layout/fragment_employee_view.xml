@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/pcLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/pcFirstNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/first_name" />
+
+            <TextView
+                android:id="@+id/pcFirstNameTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pcLastNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/last_name" />
+
+            <TextView
+                android:id="@+id/pcLastNameTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pcPhoneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/phone_number" />
+
+            <TextView
+                android:id="@+id/pcPhoneTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:autoLink="phone"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pcEmailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/email" />
+
+            <TextView
+                android:id="@+id/pcEmailTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:autoLink="email"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

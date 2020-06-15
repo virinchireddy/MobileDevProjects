@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="@color/login"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/top_logo_width"
+            android:layout_height="@dimen/top_logo_height"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.7"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/liInstructions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/padding_small"
+                        android:gravity="center_horizontal"
+                        android:text="Image upload guidelines"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/padding_xstandard"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/tick" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Individual may upload a full length picture or close up of his / her face" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_xstandard"
+                        android:layout_marginLeft="@dimen/padding_xstandard"
+                        android:layout_marginRight="@dimen/padding_xstandard"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/tick" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="You should be alone in the picture" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_xstandard"
+                        android:layout_marginLeft="@dimen/padding_xstandard"
+                        android:layout_marginRight="@dimen/padding_xstandard"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/tick" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Please upload a most recent image" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_xstandard"
+                        android:layout_marginLeft="@dimen/padding_xstandard"
+                        android:layout_marginRight="@dimen/padding_xstandard"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/tick" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="No sexually explicit images are allowed" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_xstandard"
+                        android:layout_marginLeft="@dimen/padding_xstandard"
+                        android:layout_marginRight="@dimen/padding_xstandard"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/tick" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="The picture should be an accurate representation of yourself" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_xstandard"
+                        android:layout_marginLeft="@dimen/padding_xstandard"
+                        android:layout_marginRight="@dimen/padding_xstandard"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/tick" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="VIP Membership give you the privilege to hide your picture which is mandatory to be uploaded" />
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/blue_stoke"
+                        android:onClick="upload_pic"
+                        android:paddingLeft="@dimen/padding_standard"
+                        android:paddingRight="@dimen/padding_standard"
+                        android:text="Continue"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text_size_standard" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liBarOwnerHeadding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_standard"
+                    android:layout_marginTop="@dimen/padding_standard"
+                    android:gravity="center_horizontal"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/tvPicUpload"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/padding_small"
+                        android:gravity="center_horizontal"
+                        android:text="Upload your bar picture here"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/liProfilePic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/ivPhoto"
+                        android:layout_width="@dimen/profile_pic_hight"
+                        android:layout_height="@dimen/profile_pic_hight"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/padding_small"
+                        android:background="@drawable/add_profile" />
+
+                    <ImageView
+                        android:id="@+id/ivUpLoad"
+                        android:layout_width="@dimen/check_in_button_height"
+                        android:layout_height="@dimen/check_in_button_height"
+                        android:layout_alignRight="@+id/ivPhoto"
+                        android:layout_alignTop="@+id/ivPhoto"
+                        android:layout_margin="@dimen/padding_xxsmall"
+                        android:background="#33000000"
+                        
+                        android:padding="@dimen/padding_xxsmall"
+                        android:src="@drawable/edit_photo_icon" />
+                   
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liRegistor"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@color/login"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnRegistor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button_selector"
+            android:onClick="proceed"
+            android:paddingBottom="@dimen/padding_xxsmall"
+            android:paddingLeft="@dimen/padding_large"
+            android:paddingRight="@dimen/padding_large"
+            android:paddingTop="@dimen/padding_xxsmall"
+            android:text="@string/registor"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

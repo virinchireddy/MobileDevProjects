@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/rosefullpage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Rose is a way to show interest with a person.\nAre you sure you would like to send a rose?"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp" >
+
+        <Button
+            android:id="@+id/roseButtonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/blue_stoke"
+            android:text="Send"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_standard" />
+
+        <Button
+            android:id="@+id/roseButtonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/blue_stoke"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_standard" />
+    </LinearLayout>
+
+</LinearLayout>

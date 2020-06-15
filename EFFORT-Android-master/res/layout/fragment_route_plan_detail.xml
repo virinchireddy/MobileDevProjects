@@ -1,0 +1,261 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingTop="0dp" >
+
+    <!-- android:layout_above="@+id/completeRoutePlan" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sectionBackground"
+                android:paddingBottom="@dimen/section_padding_bottom"
+                android:paddingLeft="@dimen/section_padding_left"
+                android:paddingRight="@dimen/section_padding_right"
+                android:paddingTop="@dimen/section_padding_top"
+                android:text="@string/route_plan"
+                android:textColor="@color/sectionText"
+                android:textIsSelectable="false" >
+            </TextView>
+
+            <!--
+                     <TextView
+                    android:id="@+id/titleTextView"
+                    style="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/view_margin_left"
+                    android:layout_marginRight="@dimen/view_margin_right"
+                    android:layout_marginTop="5dp"
+                    android:textIsSelectable="true" />
+            -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fromToLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom_route"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/duration" />
+
+            <TextView
+                android:id="@+id/fromTimeTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="5dp"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+        </LinearLayout>
+
+        <!--
+            <LinearLayout
+                android:id="@+id/toLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/label_margin_bottom_route"
+                    android:layout_marginLeft="@dimen/label_margin_left"
+                    android:layout_marginRight="@dimen/label_margin_right"
+                    android:layout_marginTop="@dimen/label_margin_top"
+                    android:text="@string/to" />
+
+                <TextView
+                    android:id="@+id/toTimeTextView"
+                    style="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/view_margin_left"
+                    android:layout_marginRight="@dimen/view_margin_right"
+                    android:layout_marginTop="5dp"
+                    android:textIsSelectable="true" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/separator_height"
+                    android:background="@color/separatorBackground" />
+            </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:id="@+id/completeRouteLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom_route"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/completion_time" />
+
+            <TextView
+                android:id="@+id/completeTimeTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="5dp"
+                android:textIsSelectable="true" />
+
+            <Button
+                android:id="@+id/completeRoutePlan"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:onClick="onCompleteRoutePlanButtonClick"
+                android:text="@string/complete_route_plan" />
+
+            <Button
+                android:id="@+id/viewAllCustomersButton"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:text="@string/view_all_customers" />
+
+            <!-- android:onClick="onViewAllCustomersButtonClick" -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/sectionBackground"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/customersToVisit"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/sectionBackground"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/section_padding_bottom"
+                android:paddingLeft="@dimen/section_padding_left"
+                android:paddingRight="@dimen/section_padding_right"
+                android:paddingTop="@dimen/section_padding_top"
+                android:text="@string/customers_to_visit"
+                android:textColor="@color/sectionText"
+                android:textIsSelectable="false" >
+            </TextView>
+
+            <Button
+                android:id="@+id/sortByNearnessButton"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:gravity="center"
+                android:onClick="onSortByNearnessButtonClick"
+                android:paddingLeft="10dp"
+                android:text="@string/sort_by_nearness"
+                android:textColor="@color/sectionText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/routePlanCustomers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView><!--
+    <Button
+        android:id="@+id/completeRoutePlan"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/view_margin_bottom"
+        android:layout_marginLeft="@dimen/view_margin_left"
+        android:layout_marginRight="@dimen/view_margin_right"
+        android:layout_marginTop="@dimen/view_margin_top"
+        android:onClick="onCompleteRoutePlanButtonClick"
+        android:text="@string/complete_route_plan" />
+-->
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+</RelativeLayout>
+-->

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lifirst1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:gravity="right">
+		<TextView 
+		    android:id="@+id/tvMakeAsProfile"
+			android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+			android:text="@string/make_as_profile"
+			android:textColor="@color/white"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:textStyle="bold"
+			android:layout_weight="1"
+			android:padding="@dimen/padding_small"
+			android:layout_marginLeft="@dimen/padding_small"
+			android:background="@drawable/login_button_selector"
+			android:textSize="@dimen/text_size_standard"
+		    />
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="@dimen/check_in_button_height"
+            android:layout_height="@dimen/check_in_button_height"
+            android:layout_margin="@dimen/padding_standard"
+            android:background="@drawable/delete_icon" />
+    </LinearLayout>
+
+   
+        
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+       android:layout_height="fill_parent" />
+    
+     
+   
+    
+    
+
+</LinearLayout>

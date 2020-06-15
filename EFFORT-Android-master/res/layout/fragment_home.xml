@@ -1,0 +1,126 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    tools:context=".HomeActivity" >
+
+<!--     <TableRow
+        android:id="@+id/row1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageButton
+            android:id="@+id/agendaButton"
+            android:layout_margin="@dimen/home_image_margin"
+            android:background="@drawable/bg_selector_home"
+            android:contentDescription="@string/agenda"
+            android:onClick="onAgendaButtonClick"
+            android:padding="@dimen/home_image_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/agenda" />
+
+        <ImageButton
+            android:id="@+id/customersButton"
+            android:layout_margin="@dimen/home_image_margin"
+            android:background="@drawable/bg_selector_home"
+            android:contentDescription="@string/customers"
+            android:onClick="onCustomersButtonClick"
+            android:padding="@dimen/home_image_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/customers" />
+
+        <ImageButton
+            android:id="@+id/jobsButton"
+            android:layout_margin="@dimen/home_image_margin"
+            android:background="@drawable/bg_selector_home"
+            android:contentDescription="@string/jobs"
+            android:onClick="onJobsButtonClick"
+            android:padding="@dimen/home_image_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/jobs" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageButton
+            android:id="@+id/invitationsButton"
+            android:layout_margin="@dimen/home_image_margin"
+            android:background="@drawable/bg_selector_home"
+            android:contentDescription="@string/invitations"
+            android:onClick="onInvitationsButtonClick"
+            android:padding="@dimen/home_image_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/invitations" />
+
+        <ImageButton
+            android:id="@+id/formsButton"
+            android:layout_margin="@dimen/home_image_margin"
+            android:background="@drawable/bg_selector_home"
+            android:contentDescription="@string/forms"
+            android:onClick="onFormsButtonClick"
+            android:padding="@dimen/home_image_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/forms" />
+
+        <ImageButton
+            android:id="@+id/leavesButton"
+            android:layout_margin="@dimen/home_image_margin"
+            android:background="@drawable/bg_selector_home"
+            android:contentDescription="@string/leaves"
+            android:onClick="onLeavesButtonClick"
+            android:padding="@dimen/home_image_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/leaves" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageButton
+            android:id="@+id/holidaysButton"
+            android:layout_margin="@dimen/home_image_margin"
+            android:background="@drawable/bg_selector_home"
+            android:contentDescription="@string/holidays"
+            android:onClick="onHolidaysButtonClick"
+            android:padding="@dimen/home_image_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/holidays" />
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_margin="@dimen/home_image_margin"
+            android:background="@drawable/bg_selector_home"
+            android:contentDescription="@string/settings"
+            android:onClick="onSettingsButtonClick"
+            android:padding="@dimen/home_image_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/settings" />
+
+        <ImageButton
+            android:id="@+id/helpButton"
+            android:layout_margin="@dimen/home_image_margin"
+            android:background="@drawable/bg_selector_home"
+            android:contentDescription="@string/help"
+            android:onClick="onHelpButtonClick"
+            android:padding="@dimen/home_image_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/help" />
+    </TableRow>
+ -->
+</TableLayout>

@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/route_plan_customer_list_focus"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/completeTypeImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="0dp"
+            android:contentDescription="@string/agenda_item_type" />
+
+        <TextView
+            android:id="@+id/customerTitleTextView"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp" />
+
+        <ImageView
+            android:id="@+id/nextImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:contentDescription="@string/agenda_item_type"
+            android:src="@drawable/ic_navigation_next_item_inverse" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/separator_height"
+        android:layout_marginTop="10dp"
+        android:background="@color/separatorBackground" />
+
+</LinearLayout><!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/route_plan_customer_list_focus"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edit_margin_right"
+        android:layout_marginTop="@dimen/edit_margin_right"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/completeTypeImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="0dp"
+            android:contentDescription="@string/agenda_item_type" />
+        <TextView
+            android:id="@+id/customerTitleTextView"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/completeTypeImageView"
+            android:textIsSelectable="false" >
+        </TextView>
+
+<ImageView
+    android:id="@+id/nextImageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginBottom="0dp"
+    android:layout_marginLeft="@dimen/label_margin_left"
+    android:layout_marginRight="@dimen/label_margin_right"
+    android:layout_marginTop="0dp"
+    android:contentDescription="@string/agenda_item_type"
+    android:src="@drawable/ic_navigation_next_item_inverse" />
+<RelativeLayout>
+
+</RelativeLayout><View
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/separator_height"
+    android:layout_marginTop="10dp"
+    android:background="@color/separatorBackground" />
+
+</LinearLayout>
+-->

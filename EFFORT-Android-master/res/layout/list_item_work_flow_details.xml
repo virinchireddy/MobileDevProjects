@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/label_margin_bottom"
+    android:layout_marginLeft="@dimen/label_margin_left"
+    android:layout_marginRight="@dimen/label_margin_right"
+    android:layout_marginTop="@dimen/label_margin_top"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/approvedByTextView"
+        style="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/label_margin_left"
+        android:layout_marginRight="@dimen/label_margin_right"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="false" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/approvedOnTextView"
+        style="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/label_margin_left"
+        android:layout_marginRight="@dimen/label_margin_right"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="false" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/rearksTextView"
+        style="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/label_margin_left"
+        android:layout_marginRight="@dimen/label_margin_right"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="false" >
+    </TextView>
+
+</LinearLayout>

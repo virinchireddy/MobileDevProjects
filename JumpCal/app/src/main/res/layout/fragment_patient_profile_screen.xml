@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/liMainView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_standard"
+                android:visibility="visible"
+                >
+                <sooner.om.com.sooner.helper.CircularImageView
+                    android:id="@+id/ivUploadimage"
+                    android:layout_width="@dimen/eighty"
+                    android:layout_height="@dimen/eighty"
+                    android:layout_margin="@dimen/five"
+                    android:layout_marginBottom="@dimen/eighty"
+                    />
+
+                <ImageView
+                    android:id="@+id/ivCamera"
+                    android:layout_width="@dimen/twenty"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_alignBottom="@+id/ivUploadimage"
+                    android:layout_alignRight="@+id/ivUploadimage"
+                    android:src="@drawable/cam_img" />
+
+                <TextView
+                    android:id="@+id/tvUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/five"
+                    android:layout_toRightOf="@+id/ivUploadimage"
+                    android:text=""
+                    android:textColor="@color/new_selected"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_marginTop="@dimen/padding_standard"
+                android:background="@drawable/gray_shade_selector"
+                android:cursorVisible="true"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="@dimen/padding_xsmall"
+                android:gravity="center_vertical"
+                android:hint="Email"
+                android:padding="@dimen/padding_small"
+                android:textColor="@color/new_selected"
+                android:textSize="@dimen/text_size_large" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/etPhoneno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_marginTop="@dimen/six"
+                android:background="@drawable/gray_shade_selector"
+                android:cursorVisible="true"
+                android:drawableLeft="@drawable/profile_phone"
+                android:drawablePadding="@dimen/padding_xsmall"
+                android:gravity="center_vertical"
+                android:hint="Phone no"
+                android:padding="@dimen/padding_small"
+                android:textColor="@color/new_selected"
+                android:textSize="@dimen/text_size_large" >
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_marginTop="@dimen/six"
+                android:background="@drawable/gray_shade_selector"
+                android:cursorVisible="true"
+                android:drawableLeft="@drawable/profile_home"
+                android:drawablePadding="@dimen/padding_xsmall"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/padding_small"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/new_selected">
+            </TextView>
+            <Button
+                android:id="@+id/btnDob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_marginTop="@dimen/six"
+                android:background="@drawable/login_using_border"
+                android:drawableLeft="@drawable/profile_bday"
+                android:drawablePadding="@dimen/padding_xsmall"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_small"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/new_selected">
+            </Button>
+
+            <LinearLayout
+                android:id="@+id/liProfilePic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_standard"
+                android:orientation="vertical"
+                android:background="@drawable/login_using_border"
+                android:layout_margin="@dimen/padding_xsmall"
+
+                >
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vpInsuranceCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/insurance_card_height"/>
+                <ImageView
+                    android:id="@+id/ivInsuranceCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/insurance_card_height"
+                    android:adjustViewBounds="true"
+                    android:padding="3dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/insurance_card_frame"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/liExtras"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/ivInsuranceCard"
+                    android:layout_margin="@dimen/padding_small"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/ivAddImage"
+                        android:layout_width="@dimen/padding_large"
+                        android:layout_height="@dimen/padding_large"
+                        android:src="@drawable/add_image"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/tvImageCount"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        />
+                    <ImageView
+                        android:id="@+id/ivDeleteImage"
+                        android:layout_width="@dimen/padding_large"
+                        android:layout_height="@dimen/padding_large"
+                        android:src="@drawable/delete_image"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+               <!-- <TextView
+                    android:id="@+id/tvShowCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Click to upload/capture \nimage of your insurance card"
+                    android:textSize="@dimen/text_size_standard"
+                    android:visibility="visible"
+                    android:layout_above="@+id/liExtras"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="102dp" />-->
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSavechanges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_marginTop="@dimen/padding_standard"
+                android:background="@drawable/new_green_button_selector"
+                android:text="Save Changes"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large"
+                />
+
+            <Button
+                android:id="@+id/btnChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_marginTop="@dimen/padding_xxxlarge"
+                android:background="@drawable/change_password_button_selector"
+                android:text="Change Password"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/ten"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_marginTop="@dimen/six"
+                android:background="@drawable/red_btnbackground_selector"
+                android:text="Log out"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

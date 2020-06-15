@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_id">1196701473676693</string>
+    <string name="app_name">MeetAtBars</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="forgot_password">Forgot Password / Email</string>
+    <string name="signup">Bar Owners</string>
+    <string name="account">My Account</string>
+    <string name="help">FAQS</string>
+    <string name="registration_help"><u>Help</u></string>
+    <string name="signin">Bar Hoppers</string>
+    <string name="about_screen1">describes about the meet at bars</string>
+    <string name="question1">What is your height?</string>
+    <string name="questions_heading1">Describe your Bar</string>
+    <string name="questions_heading2">Describe your Bar</string>
+    <string name="questions_heading3">Describe your Bar</string>
+    <string name="questions_heading4">Describe your Bar</string>
+    <string name="questions_heading5">Describe your Bar</string>
+    <string name="matchme_heading">Describe your Profile</string>
+    <string name="feedback_heading">Feedback</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="save"><u>Save</u></string>
+    <string name="cancel"><u>Cancel</u></string>
+    <string name="status">Status:</string>
+    <string name="no_friends_found">No friends found</string>
+    <string name="apply"><u>Apply</u></string>
+    <string name="delete"><u>Delete</u></string>
+    <string name="ft">ft.</string>
+    <string name="inches">in.</string>
+    <string name="question2">What is your hair color?</string>
+    <string name="question3">What is your body type?</string>
+    <string name="question4">Do you smoke?</string>
+    <string name="question5">Do you drink alcoholic beverages?</string>
+    <string name="question6">What is your marital status?</string>
+    <string name="question7">What is your ethnicity?</string>
+    <string name="question8">Do you have any children?</string>
+    <string name="question9">What is your income level per year?</string>
+    <string name="question10">What is your age?</string>
+    <string name="question11">What is your education level?</string>
+    <string name="proceed"><u>Continue</u></string>
+    <string name="email">Email</string>
+    <string name="make_as_profile">Set as Profile Picture</string>
+    <string name="skip">Skip</string>
+    <string name="skip_add"><u>Skip</u></string>
+    <string name="click_to_registor">Click to Register</string>
+    <string name="Click_to_login">If already a member, Login here</string>
+    <string name="registor">Register</string>
+    <string name="login_using">SignUp Using</string>
+    <string name="feedback_question1">How long did it take to get your drink from the bartender?</string>
+    <string name="feedback_question2">Did you receive free drinks from the bartender or server?</string>
+    <string name="feedback_question3">Did your bar tender over pour alcohol in your drink?</string>
+    <string name="feedback_question4">Rate the food stars?</string>
+    <string name="feedback_question5">Rate the quality of drinks or beer?</string>
+    <string name="feedback_question6">Did you receive free food from the bartender or server?</string>
+    <string name="feedback_question7">Would you go back to this bar /restaurant or recommend it to a friend?</string>
+    <string name="feedback_question8">Are the restrooms clean?</string>
+    <string name="bar_owner_question1">Hours of operation</string>
+    <string name="bar_owner_question2">Do you have any specials at your bar?</string>
+    <string name="bar_owner_question3">Do you have any special events?</string>
+    <string name="bar_owner_question4">What is the most popular cocktail for women?</string>
+    <string name="upload"><u>Upload</u></string>
+    <string name="upload_photos"><u>Upload Photos</u></string>
+    <string name="click_to_resend">Click here.</string>
+    <string name="edit_matchme"><u>Click to edit matchme questions >></u></string>
+    <string name="gcm_defaultSenderId">fluid-gamma-116405</string>
+
+    <string-array name="gender_categorie">
+        <item>Man</item>
+        <item>Woman</item>
+    </string-array>
+    <string-array name="min_age">
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+    </string-array>
+    <string-array name="max_age">
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+    </string-array>
+    <string-array name="country">
+        <item>United States</item>
+        <item>Canada</item>
+        <item>United Kingdom</item>
+        <item>California</item>
+    </string-array>
+    
+    
+
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liSubcontractorlineitems"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="#"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:background="@color/login"
+                android:text="Reference"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="OK"
+                android:textColor="@color/white" />
+
+            <Button
+
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="ACT"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="NA"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+android:layout_margin="0.1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#97B6E1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center_horizontal"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:text="11.1"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Acceptable  " />
+
+            <RadioGroup
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd58ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="59" />
+
+                <RadioButton
+                    android:id="@+id/rd58act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="59" />
+
+                <RadioButton
+                    android:id="@+id/rd58na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="59" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

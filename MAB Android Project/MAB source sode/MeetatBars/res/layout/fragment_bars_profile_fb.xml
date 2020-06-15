@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liBarProfile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ivBarPhoto"
+                    android:layout_width="@dimen/bar_profile_photo_width"
+                    android:layout_height="@dimen/bar_profile_photo_height"
+                    android:background="@drawable/bar1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvBarName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/padding_small"
+                        android:layout_marginTop="@dimen/padding_small"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:text="Speed Bar"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_standard"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/padding_small"
+                        android:layout_marginTop="@dimen/padding_xxsmall"
+                        android:gravity="left"
+                        android:singleLine="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/tvCity1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/padding_small"
+                        android:gravity="left"
+                        android:singleLine="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/tvState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/padding_small"
+                        android:gravity="left"
+                        android:singleLine="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/tvzipcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/padding_small"
+                        android:gravity="left"
+                        android:singleLine="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/tvBarNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/padding_small"
+                        android:layout_marginTop="@dimen/padding_xxsmall"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <Button
+                        android:id="@+id/btnCheckIn"
+                        android:layout_width="@dimen/bar_member_photo_width"
+                        android:layout_height="@dimen/check_in_button_height"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/padding_small"
+                        android:background="@drawable/login_button_selector"
+                        android:paddingLeft="@dimen/padding_xxsmall"
+                        android:paddingRight="@dimen/padding_xxsmall"
+                        android:text="Check-in"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnLocateOnMap	"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/check_in_button_height"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/padding_small"
+                        android:background="@drawable/login_button_selector"
+                        android:paddingLeft="@dimen/padding_xxsmall"
+                        android:paddingRight="@dimen/padding_xxsmall"
+                        android:text="Locate Us On Map"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btnJoinChatRoom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/check_in_button_height"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/padding_small"
+                        android:background="@drawable/login_button_selector"
+                        android:paddingLeft="@dimen/padding_xxsmall"
+                        android:paddingRight="@dimen/padding_xxsmall"
+                        android:text="Join Chat Room"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#bccccc"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/tab_color"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tvProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3333"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Profile"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_standard" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvMembers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3333"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Members"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_standard" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvPhotos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3333"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Photos"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_standard" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/flBarProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

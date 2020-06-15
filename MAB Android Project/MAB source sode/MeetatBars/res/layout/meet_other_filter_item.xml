@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_small"
+    android:orientation="vertical"
+    android:background="@drawable/white_stoke" >
+
+    <LinearLayout
+        android:id="@+id/liQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/ivArrow"
+            android:layout_width="@dimen/padding_small"
+            android:layout_height="@dimen/padding_small"
+            android:layout_marginLeft="@dimen/padding_xxxsmall"
+            android:layout_marginRight="@dimen/padding_xxxsmall"
+            android:src="@drawable/arrow_side" />
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_xxsmall"
+            android:text="Question"
+            android:textSize="@dimen/text_size_xlarge" 
+            android:textColor="@color/gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liAnswers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_standard"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/liRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_small"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/cbAnswer1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:singleLine="true"
+                android:visibility="visible" 
+                android:textSize="@dimen/text_size_standard"/>
+
+            <CheckBox
+                android:id="@+id/cbAnswer2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:singleLine="true"
+                android:visibility="visible" 
+                android:textSize="@dimen/text_size_standard"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/cbAnswer3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:singleLine="true"
+                android:visibility="visible" 
+                android:textSize="@dimen/text_size_standard"/>
+
+            <CheckBox
+                android:id="@+id/cbAnswer4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:textSize="@dimen/text_size_standard" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/cbAnswer5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:singleLine="true"
+                android:visibility="gone" 
+                android:textSize="@dimen/text_size_standard"/>
+
+            <CheckBox
+                android:id="@+id/cbAnswer6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:textSize="@dimen/text_size_standard" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/cbAnswer7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:singleLine="true"
+                android:visibility="gone" 
+                android:textSize="@dimen/text_size_standard"/>
+
+            <CheckBox
+                android:id="@+id/cbAnswer8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:singleLine="true"
+                android:visibility="gone" 
+                android:textSize="@dimen/text_size_standard"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

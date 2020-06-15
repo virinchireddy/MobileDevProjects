@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivInsuranceCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/insurance_card_height"
+        android:adjustViewBounds="true"
+        android:padding="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/insurance_card_frame" />
+
+</LinearLayout>

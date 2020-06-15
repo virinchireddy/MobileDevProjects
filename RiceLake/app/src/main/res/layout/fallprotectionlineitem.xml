@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liFallprotectionlineitems"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="#"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:background="@color/login"
+                android:text="Reference"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="OK"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="ACT"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="NA"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="#97B6E1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="7.1"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text=" Proper Acess Walkways &amp; Ramps " />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd34ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="35" />
+
+                <RadioButton
+                    android:id="@+id/rd34act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="35" />
+
+                <RadioButton
+                    android:id="@+id/rd34na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="35" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="#E3F2FD"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="7.2"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Static Lines Installed Properly" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd35ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="36" />
+
+                <RadioButton
+                    android:id="@+id/rd35act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="36" />
+
+                <RadioButton
+                    android:id="@+id/rd35na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="36" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="@color/item1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="7.3"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="100 % Tied - Off Practiced Above 6-Feet " />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd36ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="37" />
+
+                <RadioButton
+                    android:id="@+id/rd36act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="37" />
+
+                <RadioButton
+                    android:id="@+id/rd36na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="37" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="@color/item2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="7.4"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Handrail Systems &amp; Perimeter Guards" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd37ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="38" />
+
+                <RadioButton
+                    android:id="@+id/rd37act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="38" />
+
+                <RadioButton
+                    android:id="@+id/rd37na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="38" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="@color/item1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="7.5"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Rebar Protection Installed " />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd38ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="39" />
+
+                <RadioButton
+                    android:id="@+id/rd38act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="39" />
+
+                <RadioButton
+                    android:id="@+id/rd38na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="39" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="@color/item2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="7.6"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Ladders Installed Properly &amp; Tied - Off" />
+
+            <RadioGroup
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd39ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="40" />
+
+                <RadioButton
+                    android:id="@+id/rd39act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="40" />
+
+                <RadioButton
+                    android:id="@+id/rd39na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="40" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="@color/item1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="7.7"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Aerial Lifts - Tie- Off - Inspected Daily" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd40ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="41" />
+
+                <RadioButton
+                    android:id="@+id/rd40act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="41" />
+
+                <RadioButton
+                    android:id="@+id/rd40na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="41" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="@color/item2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="7.8"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Manbasket Procedures Followed " />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd41ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="42" />
+
+                <RadioButton
+                    android:id="@+id/rd41act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="42" />
+
+                <RadioButton
+                    android:id="@+id/rd41na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="42" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

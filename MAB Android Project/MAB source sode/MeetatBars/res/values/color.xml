@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="TabHost">#660060</color>
+    <color name="TabTextColor">#ffffff</color>
+    <color name="colorPrimary">#84327f</color>
+    <color name="colorPrimaryDark">#84327f</color>
+    <color name="colorAccent">#FF80AB</color>
+    <color name="mainBackground">#ffffff</color>
+    <color name="login_pressed">#b7b9b7</color>
+    <color name="home_buttons_pressed">#ff1e00</color>
+    <color name="login">#4d90e0</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="about_screen1">#a88d72</color>
+    <color name="about_screen2">#b2b2db</color>
+    <color name="about_screen3">#f9c5c5</color>
+    <color name="about_screen4">#e4e4e4</color>
+    <color name="blue">#5889db</color>
+    <color name="facebook_color">#3b5998</color>
+    <color name="twitter_color">#4099FF</color>
+    <color name="google_color">#dd4b39</color>
+    <color name="yellow">#fcd914</color>
+    <color name="green">#43ab51</color>
+    <color name="purpole">#a48ded</color>
+    <color name="pink">#f08080</color>
+    <color name="signup_color">#64B8BA</color>
+    <color name="signin_color">#a2bad5</color>
+    <color name="tab_color">#82B1FF</color>
+    <color name="red">#fe1c2f</color>
+    <color name="light_blue">#b3cefa</color>
+    <color name="all_background">#ededed</color>
+    <color name="bottom_band">#4d90e0</color>
+    <color name="dark_red">#db1b1b</color>
+    <color name="buy_roses_color">#F22A72</color>
+    <color name="buy_beeds_color">#82D4E7</color>
+    <color name="search_text_color">#d4d2d2</color>
+    <color name="gray">#8c8c88</color>
+
+</resources>

@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/actions"
+        android:icon="@drawable/ic_action_overflow"
+        android:orderInCategory="110"
+        android:title="@string/actions"
+        app:showAsAction="always|withText">
+        <menu>
+            <item
+                android:id="@+id/markAllInvitationsAsRead"
+                android:orderInCategory="112"
+                android:title="@string/mark_all_invitations_as_read"
+                app:showAsAction="always|withText"/>
+            <item
+                android:id="@+id/markAllInvitationsAsUnread"
+                android:orderInCategory="113"
+                android:title="@string/mark_all_invitations_as_unread"
+                app:showAsAction="always|withText"/>
+        </menu>
+    </item>
+
+</menu>

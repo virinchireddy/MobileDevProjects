@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liTopView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:layout_marginTop="@dimen/padding_large"
+        android:gravity="center_horizontal"
+        android:textColor="@color/new_selected"
+        android:textSize="@dimen/text_size_xxxlarge"
+        android:textStyle="bold"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/tvFutureAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_xsmall"
+        android:text="@string/future_appointments"
+        android:textColor="@color/new_selected"
+        android:visibility="gone"
+        android:textSize="@dimen/text_size_large"
+        android:layout_margin="@dimen/padding_small"
+        android:background="@drawable/green_stroke"/>
+
+    <TextView
+        android:id="@+id/tvFeatureAppntDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        android:background="@drawable/new_green_button_selector"
+        android:padding="@dimen/padding_xsmall"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginRight="@dimen/padding_small"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:id="@+id/tvYourAppointmenttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/your_appointment_is_on"
+        android:textColor="@color/grey"
+        android:visibility="gone"
+        android:textSize="@dimen/text_size_large" />
+
+    <TextView
+        android:id="@+id/tvPresentappointmentdateandtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/new_selected"
+        android:textSize="@dimen/text_size_large"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/liDoctor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ivMaindoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_xsmall"
+                android:src="@drawable/main_doc"
+                android:layout_gravity="center_vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_xxxsmall" >
+
+                <TextView
+                    android:id="@+id/tvPhysicianname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_xxsmall"
+                    android:textColor="@color/new_selected"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:textStyle="bold"
+                    android:text="Hello"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_xxxsmall"
+                    android:gravity="center_vertical"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="@dimen/padding_large"
+                        android:src="@drawable/spinner_specialty"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvSpecilaity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/padding_xxxsmall"
+                        android:textColor="@color/new_selected"
+                        android:textSize="@dimen/text_size_standard"
+                        android:layout_marginLeft="@dimen/padding_small"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/liDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_xxxsmall"
+                    android:gravity="center_vertical"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/padding_large"
+                        android:layout_height="@dimen/padding_large"
+                        android:src="@drawable/ra_n"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvDateOfAppointment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/padding_xxxsmall"
+                        android:textColor="@color/new_selected"
+                        android:textSize="@dimen/text_size_standard"
+                        android:layout_marginLeft="@dimen/padding_small"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/liDatenTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_xxxsmall"
+                    android:gravity="center_vertical"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/padding_large"
+                        android:layout_height="@dimen/padding_large"
+                        android:src="@drawable/spinner_preferedtime"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvTimeofappointment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/padding_xxxsmall"
+                        android:textColor="@color/new_selected"
+                        android:textSize="@dimen/text_size_standard"
+                        android:layout_marginLeft="@dimen/padding_small"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_xxxsmall"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/padding_large"
+                        android:layout_height="@dimen/padding_large"
+                        android:src="@drawable/facilities_n"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvFacilityname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/padding_xxxsmall"
+                        android:textColor="@color/new_selected"
+                        android:textSize="@dimen/text_size_standard"
+                        android:layout_marginLeft="@dimen/padding_small"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_xxxsmall"
+                    android:gravity="center_vertical"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/padding_large"
+                        android:layout_height="@dimen/padding_large"
+                        android:src="@drawable/spinner_location"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvFacilityLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/padding_xxxsmall"
+                        android:textColor="@color/new_selected"
+                        android:textSize="@dimen/text_size_standard"
+                        android:layout_marginLeft="@dimen/padding_small"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvNoteconstant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/padding_xxxsmall"
+            android:padding="@dimen/padding_xxxsmall"
+            android:text="@string/your_appointment_vary"
+            android:textColor="@color/new_selected"
+            android:textStyle="italic"
+            android:textSize="@dimen/text_size_standard"
+            android:visibility="visible" />
+
+
+
+        <TextView
+            android:id="@+id/tvAppointmentstarts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_small"
+            android:text="@string/appointment_starts"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tvtextViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/textsize_thirty"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/padding_small"
+        android:background="#e9e8e8" />
+
+    <TextView
+        android:id="@+id/tvFutureAppointments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_xsmall"
+        android:text="@string/future_appointments"
+        android:textColor="@color/new_selected"
+        android:visibility="gone"
+        android:textSize="@dimen/text_size_large"
+        android:layout_margin="@dimen/padding_small"
+        android:background="@drawable/green_stroke"/>
+
+    <TextView
+        android:id="@+id/tvNoFeatureAppt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_xsmall"
+        android:text="@string/no_future_appointments"
+        android:textColor="@color/new_selected"
+        android:visibility="gone"
+        android:textSize="@dimen/text_size_large"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginRight="@dimen/padding_small"
+        android:layout_marginTop="@dimen/padding_large"
+        android:layout_marginBottom="@dimen/padding_large"
+        />
+
+
+</LinearLayout>

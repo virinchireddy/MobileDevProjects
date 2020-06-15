@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="@color/login"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/top_logo_width"
+            android:layout_height="@dimen/top_logo_height"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.5"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_small"
+            android:isScrollContainer="false" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_standard"
+                    android:text="Choose account type"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgLoginIdentification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_standard"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <RadioButton
+                        android:id="@+id/rbBarOwner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="Register Business"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <RadioButton
+                        android:id="@+id/rbBarHopper"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Bar Hopper"
+                        android:textSize="@dimen/text_size_small" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_xxsmall"
+                    android:layout_marginTop="@dimen/padding_xxlarge"
+                    android:text="Enter your Nick name / alias"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_standard"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_using_border"
+                    android:cursorVisible="true"
+                    android:drawableLeft="@drawable/user"
+                    android:hint="Nick name / alias"
+                    android:maxLength="20"
+                    android:padding="@dimen/padding_xxsmall"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_small" >
+
+                    <requestFocus />
+                </EditText>
+
+                <LinearLayout
+                    android:id="@+id/liAvilable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/tick" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Available" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liUnAvilable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/cross" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Unavailable" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnCheckAvilability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/light_blue"
+                    android:paddingBottom="@dimen/padding_xxsmall"
+                    android:paddingLeft="@dimen/padding_large"
+                    android:paddingRight="@dimen/padding_large"
+                    android:paddingTop="@dimen/padding_xxsmall"
+                    android:text="Check Availability"
+                    android:textSize="@dimen/text_size_standard" />
+
+                <Button
+                    android:id="@+id/btnRegistor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_small"
+                    android:background="@drawable/light_blue_button_selector"
+                    android:paddingBottom="@dimen/padding_xxsmall"
+                    android:paddingLeft="@dimen/padding_large"
+                    android:paddingRight="@dimen/padding_large"
+                    android:paddingTop="@dimen/padding_xxsmall"
+                    android:text="Continue"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_standard" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:text="Please note you will be referred by the above name throughout the application."
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

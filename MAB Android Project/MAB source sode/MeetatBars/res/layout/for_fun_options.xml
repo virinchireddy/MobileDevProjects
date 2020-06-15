@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/padding_large"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/cbBasketBall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="1"
+                android:text="Basketball"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbFootball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="2"
+                android:text="Football"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbReading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="3"
+                android:text="Reading"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbSwimming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="4"
+                android:text="Swimming"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbShopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="5"
+                android:text="Shopping"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbCooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="6"
+                android:text="Cooking"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbTravel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="7"
+                android:text="Travel"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbOutdoorActivities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="8"
+                android:text="Outdoor Activities"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbCamping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="9"
+                android:text="Camping"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbHiking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="10"
+                android:text="Hiking"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbWorkout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="11"
+                android:text="Workout"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbWatchMovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="12"
+                android:text="Watch movies"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbComputerGames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="13"
+                android:text="Computer Games"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbOpera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="14"
+                android:text="Opera"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbSymphony"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="15"
+                android:text="Symphony"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbAdventuresSinging"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="16"
+                android:text="Adventures singing"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbGoingToMuseum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="17"
+                android:text="Going to museum"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbCrossfit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="18"
+                android:text="Crossfit"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbMartialArts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="19"
+                android:text="Martial arts"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbBoxing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="20"
+                android:text="Boxing"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbAerobics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="21"
+                android:text="Aerobics"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbSoccer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="22"
+                android:text="Soccer"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbBaseball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="23"
+                android:text="Baseball"
+                android:textSize="@dimen/text_size_standard" />
+
+            <CheckBox
+                android:id="@+id/cbBarHopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="25"
+                android:text="Bar hopping"
+                android:textSize="@dimen/text_size_standard" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/check_in_button_height"
+            android:background="@drawable/login_button_selector"
+            android:onClick="select"
+            android:text="Select"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/padding_xxxsmall"
+            android:paddingRight="@dimen/padding_xxxsmall"
+            android:textSize="@dimen/text_size_small" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/check_in_button_height"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/login_button_selector"
+            android:paddingLeft="@dimen/padding_xxxsmall"
+            android:paddingRight="@dimen/padding_xxxsmall"
+            android:onClick="cancel"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+</LinearLayout>

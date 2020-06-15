@@ -1,0 +1,191 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingTop="0dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/recordActivities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom_route"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:gravity="center"
+                android:text="@string/record_activities"
+                android:textColor="@color/common_label_record_blue" />
+            -->
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sectionBackground"
+                android:paddingBottom="@dimen/section_padding_bottom"
+                android:paddingLeft="@dimen/section_padding_left"
+                android:paddingRight="@dimen/section_padding_right"
+                android:paddingTop="@dimen/section_padding_top"
+                android:text="@string/record_activities"
+                android:textColor="@color/sectionText"
+                android:textIsSelectable="false" >
+            </TextView>
+            <!--
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_route_label_height"
+                android:background="@color/common_label_record_blue" />
+            -->
+
+            <TextView
+                android:id="@+id/emptyTextViewActivityBtns"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/no_activities"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:id="@+id/routePlanCustomerActivityButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+
+            <LinearLayout
+                android:id="@+id/completeRouteLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/label_margin_bottom_route"
+                    android:layout_marginLeft="@dimen/label_margin_left"
+                    android:layout_marginRight="@dimen/label_margin_right"
+                    android:layout_marginTop="@dimen/label_margin_top"
+                    android:text="@string/completion_time" />
+
+                <TextView
+                    android:id="@+id/completeTimeTextView"
+                    style="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/view_margin_left"
+                    android:layout_marginRight="@dimen/view_margin_right"
+                    android:layout_marginTop="5dp"
+                    android:textIsSelectable="true" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/separator_height"
+                    android:background="@color/separatorBackground" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/completeVisitButton"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:onClick="onCompleteRoutePlanButtonClick"
+                android:text="@string/complete_visit" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/routeHistoryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--
+                 <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom_route"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:gravity="center"
+                android:text="@string/route_history"
+                android:textColor="@color/common_label_record_blue" />
+            -->
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sectionBackground"
+                android:paddingBottom="@dimen/section_padding_bottom"
+                android:paddingLeft="@dimen/section_padding_left"
+                android:paddingRight="@dimen/section_padding_right"
+                android:paddingTop="@dimen/section_padding_top"
+                android:text="@string/route_history"
+                android:textColor="@color/sectionText"
+                android:textIsSelectable="false" >
+            </TextView>
+            <!--
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_route_label_height"
+                android:background="@color/common_label_record_blue" />
+            -->
+
+            <TextView
+                android:id="@+id/emptyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/no_route_history"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:id="@+id/customerActivityHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

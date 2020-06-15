@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liErosioncontrollineitem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="#"
+                android:textColor="@color/white" />
+
+            <Button
+
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:background="@color/login"
+                android:text="Reference"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="OK"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="ACT"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="NA"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="#97B6E1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="1.1"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="ECIP Reviewed By Foreman/Subs" />
+
+            <RadioGroup
+                android:id="@+id/rg1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal"
+                android:tag="1.1">
+
+                <RadioButton
+                    android:id="@+id/rd1ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="1" />
+
+                <RadioButton
+                    android:id="@+id/rd1act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="1" />
+
+                <RadioButton
+                    android:id="@+id/rd1na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="1" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="#E3F2FD"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="1.2"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Erosion/Sediment Control BMP's" />
+
+            <RadioGroup
+                android:id="@+id/rg2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal"
+                android:tag="1.2">
+
+                <RadioButton
+                    android:id="@+id/rd2ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="2" />
+
+                <RadioButton
+                    android:id="@+id/rd2act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="2" />
+
+                <RadioButton
+                    android:id="@+id/rd2na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="2" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/item1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="1.3"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Slit Fence" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd3ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="3" />
+
+                <RadioButton
+                    android:id="@+id/rd3act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="3" />
+
+                <RadioButton
+                    android:id="@+id/rd3na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="3" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/item2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="1.4"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Sedimentation Basins" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd4ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="4" />
+
+                <RadioButton
+                    android:id="@+id/rd4act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="4" />
+
+                <RadioButton
+                    android:id="@+id/rd4na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="4" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/item1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="1.5"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Drainage Ditches &amp; Surface Waters " />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd5ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="5" />
+
+                <RadioButton
+                    android:id="@+id/rd5act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="5" />
+
+                <RadioButton
+                    android:id="@+id/rd5na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="5" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/item2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="1.6"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Site Exits" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd6ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="6" />
+
+                <RadioButton
+                    android:id="@+id/rd6act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="6" />
+
+                <RadioButton
+                    android:id="@+id/rd6na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="6" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/item1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="1.7"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Infiltration Areas" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd7ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="7" />
+
+                <RadioButton
+                    android:id="@+id/rd7act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="7" />
+
+                <RadioButton
+                    android:id="@+id/rd7na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="7" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/item2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="1.8"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Pollution Prevention Measures" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd8ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="8" />
+
+                <RadioButton
+                    android:id="@+id/rd8act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="8" />
+
+                <RadioButton
+                    android:id="@+id/rd8na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="8" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/item1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="1.9" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="OTHER" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd9ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="9" />
+
+                <RadioButton
+                    android:id="@+id/rd9act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="9" />
+
+                <RadioButton
+                    android:id="@+id/rd9na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="9" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <group android:id="@+id/workFlowGroup" >
+        <item
+            android:id="@+id/addWorkFlow"
+            android:icon="@drawable/ic_content_new"
+            android:orderInCategory="110"
+            android:title="@string/add_workFlow"
+            app:showAsAction="always|withText">
+        </item>
+    </group>
+
+</menu>

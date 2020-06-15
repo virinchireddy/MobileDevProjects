@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liEquipmentlineitems"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="#"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:background="@color/login"
+                android:text="Reference"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="OK"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="ACT"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:background="@color/login"
+                android:text="NA"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="#97B6E1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="8.1"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Inspected Daily &amp; Documented " />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd42ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="43" />
+
+                <RadioButton
+                    android:id="@+id/rd42act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="43" />
+
+                <RadioButton
+                    android:id="@+id/rd42na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="43" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="#E3F2FD"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="8.2"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="In Overall Safe Operating Condition" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd43ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="44" />
+
+                <RadioButton
+                    android:id="@+id/rd43act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="44" />
+
+                <RadioButton
+                    android:id="@+id/rd43na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="44" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="@color/item1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="8.3"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+
+                android:text="Slings, Chains &amp; Chokers Inspected " />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd44ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="45" />
+
+                <RadioButton
+                    android:id="@+id/rd44act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="45" />
+
+                <RadioButton
+                    android:id="@+id/rd44na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="45" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="@color/item2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="8.4"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Equipped With A Fire Extinguisher" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd45ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="46" />
+
+                <RadioButton
+                    android:id="@+id/rd45act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="46" />
+
+                <RadioButton
+                    android:id="@+id/rd45na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="46" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="@color/item1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="8.5"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Backup Alarms Operable " />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd46ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="47" />
+
+                <RadioButton
+                    android:id="@+id/rd46act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="47" />
+
+                <RadioButton
+                    android:id="@+id/rd46na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="47" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.1dp"
+            android:background="@color/item2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:text="8.6"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.45"
+                android:padding="5dp"
+                android:text="Seatbelts Used At All Times" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.30"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd47ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="48" />
+
+                <RadioButton
+                    android:id="@+id/rd47act"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="48" />
+
+                <RadioButton
+                    android:id="@+id/rd47na"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.10"
+                    android:tag="48" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

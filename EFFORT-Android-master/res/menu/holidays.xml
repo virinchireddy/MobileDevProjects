@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/prevYear"
+        android:icon="@drawable/ic_navigation_previous_item"
+        android:orderInCategory="100"
+        android:title="@string/prev"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/nextYear"
+        android:icon="@drawable/ic_navigation_next_item"
+        android:orderInCategory="101"
+        android:title="@string/next"
+        app:showAsAction="always|withText"/>
+
+</menu>

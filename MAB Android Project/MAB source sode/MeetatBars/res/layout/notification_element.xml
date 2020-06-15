@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_stoke"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small" >
+
+        <ImageView
+            android:id="@+id/ivUserPhoto"
+            android:layout_width="@dimen/hopper_profile_photo_width"
+            android:layout_height="@dimen/hopper_profile_photo_height" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_small" >
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_standard"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_standard" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/padding_standard"
+                    android:layout_height="@dimen/padding_standard"
+                    android:background="@drawable/friend_notification" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_small" 
+                    android:paddingLeft="@dimen/padding_xxxsmall"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liFriendRequest"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnDecline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/check_in_button_height"
+                    android:layout_margin="@dimen/padding_small"
+                    android:background="@drawable/login_button_selector"
+                    android:paddingLeft="@dimen/padding_xxsmall"
+                    android:paddingRight="@dimen/padding_xxsmall"
+                    android:text="Decline"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_small" />
+
+                <Button
+                    android:id="@+id/btnAccept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/check_in_button_height"
+                    android:layout_margin="@dimen/padding_small"
+                    android:background="@drawable/login_button_selector"
+                    android:paddingLeft="@dimen/padding_xxsmall"
+                    android:paddingRight="@dimen/padding_xxsmall"
+                    android:text="Accept"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

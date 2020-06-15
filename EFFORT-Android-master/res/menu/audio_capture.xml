@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <!--
+         <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="@string/action_settings"/>
+    -->
+    <item
+        android:id="@+id/saveAudio"
+        android:icon="@drawable/ic_content_save"
+        android:orderInCategory="100"
+        android:title="@string/save"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/discardAudio"
+        android:icon="@drawable/ic_content_discard"
+        android:orderInCategory="101"
+        android:title="@string/discard"
+        app:showAsAction="always|withText"/>
+
+</menu>

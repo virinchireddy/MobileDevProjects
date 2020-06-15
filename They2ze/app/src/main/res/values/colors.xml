@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#cacaca</color>
+    <color name="colorPrimaryDark">#616161</color>
+    <color name="colorAccent">#00A8AA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="border_gray">#B1BCBE</color>
+    <color name="colorRipple">#A9A9F5</color>
+    <color name="black">#000000</color>
+    <color name="lightBlue">#d1e8fc</color>
+    <color name="blue">#0472c2</color>
+    <color name="backGround">#fcbc84</color>
+    <color name="intro_button_color">#E94522</color>
+    <color name="slate_color">#838282</color>
+    <color name="backGround2">#F48232</color>
+    <color name="red">#fe1c2f</color>
+</resources>

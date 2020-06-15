@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rvBarsFilter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:context=".BarsFilter" />
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/check_in_button_height"
+            android:layout_marginLeft="@dimen/padding_xxsmall"
+            android:layout_marginRight="@dimen/padding_xxsmall"
+            android:background="@drawable/login_button_selector"
+            android:text="Reset"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small"  />
+
+        <Button
+            android:id="@+id/btnApply"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/check_in_button_height"
+            android:layout_marginLeft="@dimen/padding_xxsmall"
+            android:layout_marginRight="@dimen/padding_xxsmall"
+            android:background="@drawable/login_button_selector"
+            android:text="Apply"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small"  />
+        
+    </LinearLayout>
+    
+    
+    
+</LinearLayout>

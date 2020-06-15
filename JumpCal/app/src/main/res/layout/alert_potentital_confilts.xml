@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/padding_standard"
+    android:layout_marginTop="@dimen/padding_standard"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvEvent1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:text="@string/no_events"
+        android:textColor="@color/new_selected"
+        android:textSize="@dimen/text_size_large" />
+
+    <TextView
+        android:id="@+id/tvEventDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginTop="@dimen/padding_xxsmall"
+        android:text=""
+        android:textSize="@dimen/text_size_large"
+         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:layout_marginTop="@dimen/padding_small"
+        android:background="@color/login_pressed" />
+
+    <TextView
+        android:id="@+id/tvEvent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:text="@string/no_events"
+        android:textColor="@color/new_selected"
+        android:textSize="@dimen/text_size_large" />
+
+    <TextView
+        android:id="@+id/tvEventDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginTop="@dimen/padding_xxsmall"
+        android:text=""
+        android:textSize="@dimen/text_size_large" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:layout_marginTop="@dimen/padding_small"
+        android:background="@color/login_pressed" />
+
+    <TextView
+        android:id="@+id/tvEvent3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:text="@string/no_events"
+        android:textColor="@color/new_selected"
+        android:textSize="@dimen/text_size_large" />
+
+    <TextView
+        android:id="@+id/tvEventDate3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginTop="@dimen/padding_xxsmall"
+        android:text=""
+        android:textSize="@dimen/text_size_large" />
+
+</LinearLayout>

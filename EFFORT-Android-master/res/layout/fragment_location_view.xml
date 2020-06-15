@@ -1,0 +1,428 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sectionBackground"
+            android:paddingBottom="@dimen/section_padding_bottom"
+            android:paddingLeft="@dimen/section_padding_left"
+            android:paddingRight="@dimen/section_padding_right"
+            android:paddingTop="@dimen/section_padding_top"
+            android:text="@string/location_name"
+            android:textColor="@color/sectionText"
+            android:textIsSelectable="false" >
+        </TextView>
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_margin_bottom"
+            android:layout_marginLeft="@dimen/view_margin_left"
+            android:layout_marginRight="@dimen/view_margin_right"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:textIsSelectable="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        <LinearLayout
+            android:id="@+id/descriptionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/description" />
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sectionBackground"
+                android:paddingBottom="@dimen/section_padding_bottom"
+                android:paddingLeft="@dimen/section_padding_left"
+                android:paddingRight="@dimen/section_padding_right"
+                android:paddingTop="@dimen/section_padding_top"
+                android:text="@string/address"
+                android:textColor="@color/sectionText"
+                android:textIsSelectable="false" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/streetLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/label_margin_bottom"
+                    android:layout_marginLeft="@dimen/label_margin_left"
+                    android:layout_marginRight="@dimen/label_margin_right"
+                    android:layout_marginTop="@dimen/label_margin_top"
+                    android:text="@string/street" />
+
+                <TextView
+                    android:id="@+id/streetTextView"
+                    style="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/view_margin_bottom"
+                    android:layout_marginLeft="@dimen/view_margin_left"
+                    android:layout_marginRight="@dimen/view_margin_right"
+                    android:layout_marginTop="@dimen/view_margin_top"
+                    android:textIsSelectable="true" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/separator_height"
+                    android:background="@color/separatorBackground" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/areaLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/label_margin_bottom"
+                    android:layout_marginLeft="@dimen/label_margin_left"
+                    android:layout_marginRight="@dimen/label_margin_right"
+                    android:layout_marginTop="@dimen/label_margin_top"
+                    android:text="@string/area" />
+
+                <TextView
+                    android:id="@+id/areaTextView"
+                    style="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/view_margin_bottom"
+                    android:layout_marginLeft="@dimen/view_margin_left"
+                    android:layout_marginRight="@dimen/view_margin_right"
+                    android:layout_marginTop="@dimen/view_margin_top"
+                    android:textIsSelectable="true" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/separator_height"
+                    android:background="@color/separatorBackground" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/landmarkLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/label_margin_bottom"
+                    android:layout_marginLeft="@dimen/label_margin_left"
+                    android:layout_marginRight="@dimen/label_margin_right"
+                    android:layout_marginTop="@dimen/label_margin_top"
+                    android:text="@string/landmark" />
+
+                <TextView
+                    android:id="@+id/landmarkTextView"
+                    style="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/view_margin_bottom"
+                    android:layout_marginLeft="@dimen/view_margin_left"
+                    android:layout_marginRight="@dimen/view_margin_right"
+                    android:layout_marginTop="@dimen/view_margin_top"
+                    android:textIsSelectable="true" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/separator_height"
+                    android:background="@color/separatorBackground" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cityLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/label_margin_bottom"
+                    android:layout_marginLeft="@dimen/label_margin_left"
+                    android:layout_marginRight="@dimen/label_margin_right"
+                    android:layout_marginTop="@dimen/label_margin_top"
+                    android:text="@string/city" />
+
+                <TextView
+                    android:id="@+id/cityTextView"
+                    style="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/view_margin_bottom"
+                    android:layout_marginLeft="@dimen/view_margin_left"
+                    android:layout_marginRight="@dimen/view_margin_right"
+                    android:layout_marginTop="@dimen/view_margin_top"
+                    android:textIsSelectable="true" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/separator_height"
+                    android:background="@color/separatorBackground" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/label_margin_bottom"
+                    android:layout_marginLeft="@dimen/label_margin_left"
+                    android:layout_marginRight="@dimen/label_margin_right"
+                    android:layout_marginTop="@dimen/label_margin_top"
+                    android:text="@string/state" />
+
+                <TextView
+                    android:id="@+id/stateTextView"
+                    style="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/view_margin_bottom"
+                    android:layout_marginLeft="@dimen/view_margin_left"
+                    android:layout_marginRight="@dimen/view_margin_right"
+                    android:layout_marginTop="@dimen/view_margin_top"
+                    android:textIsSelectable="true" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/separator_height"
+                    android:background="@color/separatorBackground" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pinCodeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/label_margin_bottom"
+                    android:layout_marginLeft="@dimen/label_margin_left"
+                    android:layout_marginRight="@dimen/label_margin_right"
+                    android:layout_marginTop="@dimen/label_margin_top"
+                    android:text="@string/pin_code" />
+
+                <TextView
+                    android:id="@+id/pinCodeTextView"
+                    style="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/view_margin_bottom"
+                    android:layout_marginLeft="@dimen/view_margin_left"
+                    android:layout_marginRight="@dimen/view_margin_right"
+                    android:layout_marginTop="@dimen/view_margin_top"
+                    android:textIsSelectable="true" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/separator_height"
+                    android:background="@color/separatorBackground" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/countryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/label_margin_bottom"
+                    android:layout_marginLeft="@dimen/label_margin_left"
+                    android:layout_marginRight="@dimen/label_margin_right"
+                    android:layout_marginTop="@dimen/label_margin_top"
+                    android:text="@string/country" />
+
+                <TextView
+                    android:id="@+id/countryTextView"
+                    style="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/view_margin_bottom"
+                    android:layout_marginLeft="@dimen/view_margin_left"
+                    android:layout_marginRight="@dimen/view_margin_right"
+                    android:layout_marginTop="@dimen/view_margin_top"
+                    android:textIsSelectable="true" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/separator_height"
+                    android:background="@color/separatorBackground" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/viewMapButtonInAddressSection"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:onClick="onViewMapButtonClick"
+                android:text="@string/view_map" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/locationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sectionBackground"
+                android:paddingBottom="@dimen/section_padding_bottom"
+                android:paddingLeft="@dimen/section_padding_left"
+                android:paddingRight="@dimen/section_padding_right"
+                android:paddingTop="@dimen/section_padding_top"
+                android:text="@string/location"
+                android:textColor="@color/sectionText"
+                android:textIsSelectable="false" >
+            </TextView>
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/latitude" />
+
+            <TextView
+                android:id="@+id/latitudeTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/longitude" />
+
+            <TextView
+                android:id="@+id/longitudeTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+
+            <Button
+                android:id="@+id/viewMapButtonInLatLngSection"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:onClick="onViewMapButtonClick"
+                android:text="@string/view_map" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

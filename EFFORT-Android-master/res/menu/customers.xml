@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/pickNone"
+        android:icon="@drawable/ic_content_remove"
+        android:orderInCategory="100"
+        app:showAsAction="always|withText"
+        android:title="@string/pick_none"/>
+    <item
+        android:id="@+id/addCustomer"
+        android:icon="@drawable/ic_content_new"
+        android:orderInCategory="101"
+        app:showAsAction="always|withText"
+        android:title="@string/add_customer"/>
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/abc_ic_search"
+        android:title="@string/search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always|collapseActionView"/>
+
+</menu>

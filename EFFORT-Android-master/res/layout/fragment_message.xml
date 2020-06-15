@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/subject" />
+
+        <TextView
+            android:id="@+id/subjectTextView"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:textIsSelectable="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/body" />
+
+        <TextView
+            android:id="@+id/bodyTextView"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:textIsSelectable="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/created_on" />
+
+        <TextView
+            android:id="@+id/createdOnTextView"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:textIsSelectable="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        <Button
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/delete_message"
+            android:textIsSelectable="true"
+            android:onClick="onDeleteMessageButtonClick" />
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        </LinearLayout>
+
+</ScrollView>

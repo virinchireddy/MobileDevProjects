@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">They2ze</string>
+    <string name="proceed">Proceed</string>
+    <string name="skip"><u>Skip >></u></string>
+    <string name="first_intro_screen_t">Welcome to they2ze!</string>
+    <string name="first_intro_screen_te">How can they2ze help you?</string>
+    <string name="first_intro_screen_tex">It\'s easy to connect.</string>
+    <string name="next">Next</string>
+
+    <string name="start">GOT IT</string>
+</resources>

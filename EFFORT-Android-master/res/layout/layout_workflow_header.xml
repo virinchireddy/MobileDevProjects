@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sectionBackground"
+            android:paddingBottom="@dimen/section_padding_bottom"
+            android:paddingLeft="@dimen/section_padding_left"
+            android:paddingRight="@dimen/section_padding_right"
+            android:paddingTop="@dimen/section_padding_top"
+            android:text="@string/title_activity_work_flow_details"
+            android:textColor="@color/sectionText"
+            android:textIsSelectable="false" >
+        </TextView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/workflowtitleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/label_margin_bottom"
+                    android:layout_marginLeft="@dimen/label_margin_left"
+                    android:layout_marginRight="@dimen/label_margin_right"
+                    android:layout_marginTop="@dimen/label_margin_top"
+                    android:text="@string/workflow_name_label" />
+
+                <TextView
+                    android:id="@+id/workflowTitleTextView"
+                    style="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/view_margin_bottom"
+                    android:layout_marginLeft="@dimen/view_margin_left"
+                    android:layout_marginRight="@dimen/view_margin_right"
+                    android:layout_marginTop="@dimen/view_margin_top"
+                    android:textIsSelectable="true" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/separator_height"
+                    android:background="@color/separatorBackground" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stagetitleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/label_margin_bottom"
+                    android:layout_marginLeft="@dimen/label_margin_left"
+                    android:layout_marginRight="@dimen/label_margin_right"
+                    android:layout_marginTop="@dimen/label_margin_top"
+                    android:text="@string/workflow_stage_name_label" />
+
+                <TextView
+                    android:id="@+id/stageTextView"
+                    style="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/view_margin_bottom"
+                    android:layout_marginLeft="@dimen/view_margin_left"
+                    android:layout_marginRight="@dimen/view_margin_right"
+                    android:layout_marginTop="@dimen/view_margin_top"
+                    android:textIsSelectable="true" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/separator_height"
+                    android:background="@color/separatorBackground" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/viewFormButton"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:onClick="onViewFormButtonClick"
+                android:text="@string/view_button" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/reSubmitButton"
+                    style="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="@dimen/view_margin_right"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onReSubmitButtonClick"
+                    android:paddingLeft="10dp"
+                    android:text="@string/re_submit_button" />
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    style="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="@dimen/view_margin_right"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onCancelButtonClick"
+                    android:paddingLeft="10dp"
+                    android:text="@string/cancel_button" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_route_label_height"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:background="@color/separatorBackground" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/workflowHistoryTitleTextView"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sectionBackground"
+            android:paddingBottom="@dimen/section_padding_bottom"
+            android:paddingLeft="@dimen/section_padding_left"
+            android:paddingRight="@dimen/section_padding_right"
+            android:paddingTop="@dimen/section_padding_top"
+            android:text="@string/title_workflow_history"
+            android:textColor="@color/sectionText"
+            android:textIsSelectable="false" >
+        </TextView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+    </LinearLayout>
+
+</LinearLayout>

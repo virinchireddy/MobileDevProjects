@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liMainScreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/liLoginDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginLeft="@dimen/padding_standard"
+            android:layout_marginRight="@dimen/padding_standard"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/twohundredfifty"
+                android:layout_height="@dimen/twohundred"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/splash_image" />
+
+
+            <LinearLayout
+                android:id="@+id/liEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_xxsmall">
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_using_border"
+
+                    android:drawableLeft="@mipmap/email"
+                    android:drawablePadding="@dimen/padding_xxsmall"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/padding_small"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textsize_fifteen">
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/login_using_border"
+
+                    android:drawableLeft="@mipmap/password"
+                    android:drawablePadding="@dimen/padding_xxsmall"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/padding_small"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textsize_fifteen" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_xxsmall"
+                    android:background="@drawable/login_button_withoutstroke"
+                    android:onClick="btnLogin"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/padding_xxsmall"
+                    android:clickable="true"
+                    android:onClick="tvForgotPassword"
+                    android:padding="@dimen/padding_small"
+                    android:text="Forget Password?"
+                    android:textColor="@color/login" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="© 2016 - RICELAKE ® All Rights Reserved"
+        android:textColor="#BDBDBD"
+        android:textSize="10sp" />
+</LinearLayout>

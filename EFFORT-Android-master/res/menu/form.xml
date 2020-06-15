@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/saveWorkflow"
+        android:icon="@drawable/ic_action_workflow_save"
+        android:orderInCategory="100"
+        android:title="@string/save_workflow"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/viewWorkflowStatus"
+        android:icon="@drawable/ic_action_view_workflow_status"
+        android:orderInCategory="101"
+        android:title="@string/view_status"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/editForm"
+        android:icon="@drawable/ic_content_edit"
+        android:orderInCategory="100"
+        android:title="@string/edit"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/printForm"
+        android:icon="@drawable/ic_action_print"
+        android:orderInCategory="101"
+        android:title="@string/print"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/saveForm"
+        android:icon="@drawable/ic_content_save"
+        android:orderInCategory="102"
+        android:title="@string/save"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/discardForm"
+        android:icon="@drawable/ic_content_discard"
+        android:orderInCategory="103"
+        android:title="@string/discard"
+        app:showAsAction="always|withText"/>
+
+</menu>

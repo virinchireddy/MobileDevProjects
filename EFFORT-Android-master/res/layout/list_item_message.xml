@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="0dp"
+        android:focusable="false" >
+    </CheckBox>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/subjectTextView"
+            style="?android:attr/textAppearanceMediumInverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textIsSelectable="false" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/bodyTextView"
+            style="?android:attr/textAppearanceMediumInverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textIsSelectable="false" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/timeTextView"
+            style="?android:attr/textAppearanceSmallInverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textIsSelectable="false" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

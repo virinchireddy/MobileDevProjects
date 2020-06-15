@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="small_text_size">16sp</dimen>
+    <dimen name="small_medium_text_size">18sp</dimen>
+    <dimen name="medium_text_size">22sp</dimen>
+    <dimen name="small_full_side_pading">5dp</dimen>
+    <dimen name="small_full_side_margin">5dp</dimen>
+    <dimen name="medium_full_side_margin">15dp</dimen>
+    -->
+
+
+    <!-- for app logo at top -->
+
+    <dimen name="top_logo_width">150dp</dimen>
+    <dimen name="top_logo_height">35dp</dimen>
+
+    <!-- middle layout info -->
+    <dimen name="image_width">250dp</dimen>
+    <dimen name="image_height">180dp</dimen>
+
+    <!-- bottom layout info -->
+
+
+    <!-- for spacing dimenssions -->
+    <dimen name="padding_xxxsmall">5dp</dimen>
+    <dimen name="padding_xxsmall">8dp</dimen>
+    <dimen name="padding_xsmall">12dp</dimen>
+    <dimen name="padding_small">15dp</dimen>
+    <dimen name="padding_xstandard">18dp</dimen>
+    <dimen name="padding_standard">21dp</dimen>
+    <dimen name="padding_large">25dp</dimen>
+    <dimen name="padding_xlarge">28dp</dimen>
+    <dimen name="padding_xxlarge">32dp</dimen>
+    <dimen name="padding_xxxlarge">35dp</dimen>
+
+    <!-- for Text Size dimenssions -->
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_standard">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">20sp</dimen>
+    <dimen name="text_size_xxlarge">22sp</dimen>
+    <dimen name="text_size_xxxlarge">26sp</dimen>
+
+    <!-- upload profiel pic screen -->
+    <dimen name="profile_pic_hight">400dp</dimen>
+    <dimen name="hopper_profile_height">400dp</dimen>
+    
+    <!-- match questions screen -->
+    <dimen name="check_in_button_height">40dp</dimen>
+    <dimen name="answers_buttons_size">30dp</dimen>
+    
+    <!-- bars screen -->
+    <dimen name="bar_photo_width">180dp</dimen>
+    <dimen name="bar_photo_height">180dp</dimen>
+	<dimen name="bar_facility_image_height">25dp</dimen>
+    <dimen name="bar_facility_image_width">25dp</dimen>
+    <dimen name="bar_user_image_height">55dp</dimen>
+    <dimen name="bar_user_image_width">55dp</dimen>
+    
+    <!-- bar member -->
+    <dimen name="bar_member_photo_width">130dp</dimen>
+    <dimen name="bar_member_photo_height">130dp</dimen>
+    <dimen name="bar_member_photo_border_width">134dp</dimen>
+    <dimen name="bar_member_photo_border_height">134dp</dimen>
+    
+    <!-- events promotions member -->
+    <dimen name="promotion_photo_width">380dp</dimen>
+    <dimen name="promotion_photo_height">200dp</dimen>
+    
+    <!-- bar profile screen -->
+    <dimen name="bar_profile_photo_width">250dp</dimen>
+    <dimen name="bar_profile_photo_height">250dp</dimen>
+    
+     <!-- friends screen -->
+    <dimen name="friends_photo_width">180dp</dimen>
+    <dimen name="friends_photo_height">180dp</dimen>
+
+</resources>

@@ -1,0 +1,893 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sectionBackground"
+            android:paddingBottom="@dimen/section_padding_bottom"
+            android:paddingLeft="@dimen/section_padding_left"
+            android:paddingRight="@dimen/section_padding_right"
+            android:paddingTop="@dimen/section_padding_top"
+            android:text="@string/settings"
+            android:textColor="@color/sectionText"
+            android:textIsSelectable="false" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/remindTextView"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/remind" />
+
+        <Spinner
+            android:id="@+id/remindersSpinner"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/edit_margin_bottom"
+            android:layout_marginLeft="@dimen/edit_margin_left"
+            android:layout_marginRight="@dimen/edit_margin_right"
+            android:layout_marginTop="@dimen/edit_margin_top" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        <TextView
+            android:id="@+id/sortTextView"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/sort" />
+
+        <Spinner
+            android:id="@+id/sortSpinner"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/edit_margin_bottom"
+            android:layout_marginLeft="@dimen/edit_margin_left"
+            android:layout_marginRight="@dimen/edit_margin_right"
+            android:layout_marginTop="@dimen/edit_margin_top" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/upload" />
+
+        <Spinner
+            android:id="@+id/uploadSpinner"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/edit_margin_bottom"
+            android:layout_marginLeft="@dimen/edit_margin_left"
+            android:layout_marginRight="@dimen/edit_margin_right"
+            android:layout_marginTop="@dimen/edit_margin_top" />
+
+        <LinearLayout
+            android:id="@+id/printerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/printer" />
+
+            <Spinner
+                android:id="@+id/printerSpinner"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/edit_margin_bottom"
+                android:layout_marginLeft="@dimen/edit_margin_left"
+                android:layout_marginRight="@dimen/edit_margin_right"
+                android:layout_marginTop="@dimen/edit_margin_top" />
+        </LinearLayout>
+
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sectionBackground"
+            android:paddingBottom="@dimen/section_padding_bottom"
+            android:paddingLeft="@dimen/section_padding_left"
+            android:paddingRight="@dimen/section_padding_right"
+            android:paddingTop="@dimen/section_padding_top"
+            android:text="@string/tracking"
+            android:textColor="@color/sectionText"
+            android:textIsSelectable="false" >
+        </TextView>
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/location_provider" />
+
+        <TextView
+            android:id="@+id/locationProviderTextView"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_margin_bottom"
+            android:layout_marginLeft="@dimen/view_margin_left"
+            android:layout_marginRight="@dimen/view_margin_right"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:textIsSelectable="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/update_mode" />
+
+        <TextView
+            android:id="@+id/updateModeTextView"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_margin_bottom"
+            android:layout_marginLeft="@dimen/view_margin_left"
+            android:layout_marginRight="@dimen/view_margin_right"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:textIsSelectable="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/tracking_frequency" />
+
+        <TextView
+            android:id="@+id/trackingFrequencyTextView"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_margin_bottom"
+            android:layout_marginLeft="@dimen/view_margin_left"
+            android:layout_marginRight="@dimen/view_margin_right"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:textIsSelectable="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/last_update_to_cloud" />
+
+        <TextView
+            android:id="@+id/lastUpdateToCloudTextView"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_margin_bottom"
+            android:layout_marginLeft="@dimen/view_margin_left"
+            android:layout_marginRight="@dimen/view_margin_right"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:textIsSelectable="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        <LinearLayout
+            android:id="@+id/fallbackIntervalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/fall_back_interval" />
+
+            <TextView
+                android:id="@+id/fallbackIntervalTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/last_update_to_cloud_via_sms" />
+
+            <TextView
+                android:id="@+id/lastUpdateToCloudViaSmsTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fusedLocationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sectionBackground"
+                android:paddingBottom="@dimen/section_padding_bottom"
+                android:paddingLeft="@dimen/section_padding_left"
+                android:paddingRight="@dimen/section_padding_right"
+                android:paddingTop="@dimen/section_padding_top"
+                android:text="@string/last_known_fused_location"
+                android:textColor="@color/sectionText"
+                android:textIsSelectable="false" >
+            </TextView>
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/status" />
+
+            <TextView
+                android:id="@+id/fusedStatusTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/latitude" />
+
+            <TextView
+                android:id="@+id/lastKnownFusedLatitudeTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/longitude" />
+
+            <TextView
+                android:id="@+id/lastKnownFusedLongitudeTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/fix_time" />
+
+            <TextView
+                android:id="@+id/lastKnownFusedFixTimeTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+
+            <Button
+                android:id="@+id/viewFusedMapButton"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:onClick="onViewFusedMapButtonClick"
+                android:text="@string/view_map" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/androidLocationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sectionBackground"
+                android:paddingBottom="@dimen/section_padding_bottom"
+                android:paddingLeft="@dimen/section_padding_left"
+                android:paddingRight="@dimen/section_padding_right"
+                android:paddingTop="@dimen/section_padding_top"
+                android:text="@string/last_known_gps_location"
+                android:textColor="@color/sectionText"
+                android:textIsSelectable="false" >
+            </TextView>
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/status" />
+
+            <TextView
+                android:id="@+id/gpsStatusTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/latitude" />
+
+            <TextView
+                android:id="@+id/lastKnownGpsLatitudeTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/longitude" />
+
+            <TextView
+                android:id="@+id/lastKnownGpsLongitudeTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/fix_time" />
+
+            <TextView
+                android:id="@+id/lastKnownGpsFixTimeTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+
+            <Button
+                android:id="@+id/viewGpsMapButton"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:onClick="onViewGpsMapButtonClick"
+                android:text="@string/view_map" />
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sectionBackground"
+                android:paddingBottom="@dimen/section_padding_bottom"
+                android:paddingLeft="@dimen/section_padding_left"
+                android:paddingRight="@dimen/section_padding_right"
+                android:paddingTop="@dimen/section_padding_top"
+                android:text="@string/last_known_network_location"
+                android:textColor="@color/sectionText"
+                android:textIsSelectable="false" >
+            </TextView>
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/status" />
+
+            <TextView
+                android:id="@+id/networkStatusTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/latitude" />
+
+            <TextView
+                android:id="@+id/lastKnownNetworkLatitudeTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/longitude" />
+
+            <TextView
+                android:id="@+id/lastKnownNetworkLongitudeTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@color/separatorBackground" />
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:text="@string/fix_time" />
+
+            <TextView
+                android:id="@+id/lastKnownNetworkFixTimeTextView"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_margin_bottom"
+                android:layout_marginLeft="@dimen/view_margin_left"
+                android:layout_marginRight="@dimen/view_margin_right"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:textIsSelectable="true" />
+
+            <Button
+                android:id="@+id/viewNetworkMapButton"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/label_margin_bottom"
+                android:layout_marginLeft="@dimen/label_margin_left"
+                android:layout_marginRight="@dimen/label_margin_right"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:onClick="onViewNetworkMapButtonClick"
+                android:text="@string/view_map" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/employeeTextView"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sectionBackground"
+            android:paddingBottom="@dimen/section_padding_bottom"
+            android:paddingLeft="@dimen/section_padding_left"
+            android:paddingRight="@dimen/section_padding_right"
+            android:paddingTop="@dimen/section_padding_top"
+            android:text="@string/employee_home_location"
+            android:textColor="@color/sectionText"
+            android:textIsSelectable="false" >
+        </TextView>
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/latitude" />
+
+        <TextView
+            android:id="@+id/employeeHomeLatitudeTextView"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_margin_bottom"
+            android:layout_marginLeft="@dimen/view_margin_left"
+            android:layout_marginRight="@dimen/view_margin_right"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:textIsSelectable="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/longitude" />
+
+        <TextView
+            android:id="@+id/employeeHomeLongitudeTextView"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_margin_bottom"
+            android:layout_marginLeft="@dimen/view_margin_left"
+            android:layout_marginRight="@dimen/view_margin_right"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:textIsSelectable="true" />
+
+        <Button
+            android:id="@+id/modifyLocationButton"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/edit_margin_bottom"
+            android:layout_marginLeft="@dimen/edit_margin_left"
+            android:layout_marginRight="@dimen/edit_margin_right"
+            android:layout_marginTop="@dimen/edit_margin_top"
+            android:maxLength="50"
+            android:onClick="onModifyLocationButtonClick"
+            android:text="@string/modify_location" />
+
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sectionBackground"
+            android:paddingBottom="@dimen/section_padding_bottom"
+            android:paddingLeft="@dimen/section_padding_left"
+            android:paddingRight="@dimen/section_padding_right"
+            android:paddingTop="@dimen/section_padding_top"
+            android:text="@string/about"
+            android:textColor="@color/sectionText"
+            android:textIsSelectable="false" >
+        </TextView>
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/version" />
+
+        <TextView
+            android:id="@+id/versionTextView"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_margin_bottom"
+            android:layout_marginLeft="@dimen/view_margin_left"
+            android:layout_marginRight="@dimen/view_margin_right"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:textIsSelectable="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/effort_id" />
+
+        <TextView
+            android:id="@+id/effortIdTextView"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_margin_bottom"
+            android:layout_marginLeft="@dimen/view_margin_left"
+            android:layout_marginRight="@dimen/view_margin_right"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:textIsSelectable="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/made_in_india" />
+
+        <TextView
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_margin_bottom"
+            android:layout_marginLeft="@dimen/view_margin_left"
+            android:layout_marginRight="@dimen/view_margin_right"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:text="@string/spoors" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        <Button
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_margin_bottom"
+            android:layout_marginLeft="@dimen/view_margin_left"
+            android:layout_marginRight="@dimen/view_margin_right"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:onClick="onLegalNoticesButtonClick"
+            android:text="@string/legal_notices" />
+
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sectionBackground"
+            android:paddingBottom="@dimen/section_padding_bottom"
+            android:paddingLeft="@dimen/section_padding_left"
+            android:paddingRight="@dimen/section_padding_right"
+            android:paddingTop="@dimen/section_padding_top"
+            android:text="@string/report_to_support"
+            android:textColor="@color/sectionText"
+            android:textIsSelectable="false" >
+        </TextView>
+
+        <Button
+            android:id="@+id/sendClientReportToServerButton"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_margin_bottom"
+            android:layout_marginLeft="@dimen/view_margin_left"
+            android:layout_marginRight="@dimen/view_margin_right"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:onClick="onSendClientReportButtonClick"
+            android:text="@string/send_client_report_to_server" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/editLeave"
+        android:icon="@drawable/ic_content_edit"
+        android:orderInCategory="100"
+        android:title="@string/edit"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/cancelLeave"
+        android:icon="@drawable/ic_content_remove"
+        android:orderInCategory="101"
+        android:title="@string/cancel_leave"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/saveLeave"
+        android:icon="@drawable/ic_content_save"
+        android:orderInCategory="102"
+        android:title="@string/save"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/discardLeave"
+        android:icon="@drawable/ic_content_discard"
+        android:orderInCategory="103"
+        android:title="@string/discard"
+        app:showAsAction="always|withText"/>
+
+</menu>

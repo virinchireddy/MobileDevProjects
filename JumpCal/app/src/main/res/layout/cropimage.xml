@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <view
+        android:id="@+id/image"
+        class="sooner.om.com.sooner.imagecrop.CropImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_x="0dip"
+        android:layout_y="0dip"
+        android:background="#55000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+
+        <Button
+            android:id="@+id/discard"
+            android:background="@drawable/new_green_button_selector"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:layout_marginTop="@dimen/padding_small"
+
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginRight="@dimen/padding_xxsmall"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size_large"/>
+
+        <ImageButton
+            android:id="@+id/rotateLeft"
+            android:background="@drawable/gray_stoke"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/discard"
+            android:src="@drawable/ic_rotate_left"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/rotateRight"
+            android:background="@drawable/gray_stoke"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/rotateLeft"
+            android:src="@drawable/ic_rotate_right"
+            android:visibility="gone"
+
+
+            />
+
+        <Button
+            android:id="@+id/save"
+            android:background="@drawable/new_green_button_selector"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/rotateRight"
+            android:layout_weight="1"
+            android:text="@string/ok"
+            android:layout_marginLeft="@dimen/padding_xxsmall"
+            android:layout_marginTop="@dimen/padding_small"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginRight="@dimen/padding_small"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large"/>
+
+    </LinearLayout>
+</RelativeLayout>

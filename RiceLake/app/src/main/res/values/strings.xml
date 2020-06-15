@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">RiceLake</string>
+    <string name="Search">Search Projects</string>
+    <string name="comment1"><b>Comment: </b>Mowbray was not tied off and leaning way over handrils of lift.</string>
+    <string name="comment2"><b>Comment: </b>Mowbray was not tied off and leaning way over handrils of lift.</string>
+    <string name="actiontaken1"><b>Action taken: </b> Dan addressed this immediately.</string>
+    <string name="actiontaken2"><b>Action taken: </b>Dan and I addressed.</string>
+    <string name="uploadimage"><b>Click to browse Image</b></string>
+    <string name="forgot_password"><u>Forgot Password ?</u></string>
+    <string name="posted"><b>Posted on: </b> 12/9/2016</string>
+    <string name="viewdetails"><u>View details</u></string>
+    <string name="saveimage"><u>Update Image</u></string>
+    <string name="reference"><b>Reference: </b></string>
+    <string name="saving_image">Saving image</string>
+    <string name="preparing_card">Preparing card</string>
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+    <string name="comment"><b>Comment: </b></string>
+    <string name="actiontaken"><b>Action Taken: </b></string>
+
+    <string-array name="lineitems">
+        <item> Select </item>
+        <item>1 Erosion Control Inspection Item </item>
+        <item>2 General Safety Practices</item>
+        <item>3 Utilities</item>
+        <item>4 Housekeeping</item>
+        <item>5 Fire Protection</item>
+        <item>6 Excavation and Trenching</item>
+        <item>7 Fall Protection</item>
+        <item>8 Equipment – Cranes, Loaders, Forklifts, etc.</item>
+        <item>9 Scaffold</item>
+        <item>10 Tools and Equipment</item>
+        <item>11 Subcontractor Safety</item>
+    </string-array>
+    <string name="LineItem">Line Item</string>
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>
+

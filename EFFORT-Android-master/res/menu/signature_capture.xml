@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/saveSignature"
+        android:icon="@drawable/ic_content_save"
+        android:orderInCategory="100"
+        android:title="@string/save"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/discardSignature"
+        android:icon="@drawable/ic_content_discard"
+        android:orderInCategory="101"
+        android:title="@string/discard"
+        app:showAsAction="always|withText"/>
+
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="right"
+        android:layout_margin="@dimen/padding_small">
+
+         <ImageView 
+             android:id="@+id/ivUploadPhotos"
+            android:layout_width="@dimen/check_in_button_height"
+            android:layout_height="@dimen/check_in_button_height"
+            android:background="@drawable/upload_image" />
+        
+    </LinearLayout>
+
+    <TextView 
+         android:id="@+id/tvWarningMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+       android:textColor="@color/red"
+       android:textSize="@dimen/text_size_standard"
+        android:text="Some of your photos are blocked by Superadmin, so please contact the support team at meetatbars@gmail.com"/>
+    <GridView
+        android:id="@+id/gvManagePhotos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/padding_xxsmall"
+        android:clickable="true"
+        android:columnWidth="100dp"
+        android:drawSelectorOnTop="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/padding_xxsmall"
+        android:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/editLocation"
+        android:icon="@drawable/ic_content_edit"
+        android:orderInCategory="101"
+        android:title="@string/edit"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/saveLocation"
+        android:icon="@drawable/ic_content_save"
+        android:orderInCategory="102"
+        android:title="@string/save"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/discardLocation"
+        android:icon="@drawable/ic_content_discard"
+        android:orderInCategory="103"
+        android:title="@string/discard"
+        app:showAsAction="always|withText"/>
+
+</menu>

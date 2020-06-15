@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_new_activity"
+            android:title="Add New Activity" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_medicines"
+            android:title="My Medicines" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_appointments"
+            android:title="My Appointments" />
+        <item
+            android:id="@+id/nav_test"
+            android:icon="@drawable/ic_tests"
+            android:title="My Tests" />
+        <item
+            android:id="@+id/nav_doctors"
+            android:icon="@drawable/ic_doctors"
+            android:title="My Doctors" />
+        <item
+            android:id="@+id/nav_resources"
+            android:icon="@drawable/ic_resources"
+            android:title="Resources" />
+        <item
+            android:id="@+id/nav_preferences"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Preferences" />
+
+    </group>
+
+   <!-- <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

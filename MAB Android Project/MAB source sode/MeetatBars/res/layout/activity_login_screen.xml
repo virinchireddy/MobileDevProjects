@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liMainScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="6" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="@color/login"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/top_logo_width"
+            android:layout_height="@dimen/top_logo_height"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liLoginDetails"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:layout_marginLeft="@dimen/padding_standard"
+        android:layout_marginRight="@dimen/padding_standard"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/login" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_xxsmall" >
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_using_border"
+                android:cursorVisible="true"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="@dimen/padding_xxsmall"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/padding_small"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_small" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_xxsmall"
+                android:background="@drawable/login_using_border"
+                android:cursorVisible="true"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="@dimen/padding_xxsmall"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="@dimen/padding_small"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_small"
+                android:typeface="normal" />
+         <TextView 
+       			 android:id="@+id/tvWarningMessage"
+       			 android:layout_width="match_parent"
+       			 android:layout_height="wrap_content"
+       			 android:gravity="center_horizontal"
+       			 android:visibility="gone"
+      			 android:textColor="@color/red"
+      			 android:textSize="@dimen/text_size_standard"
+      			 android:text="Your account is inactive. Please contact the support team at meetatbars@gmail.com"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/check_in_button_height"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="@dimen/padding_xxsmall"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/login_button_selector"
+                    android:onClick="signup"
+                    android:text="Sign Up"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_small" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/check_in_button_height"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="@dimen/padding_xxsmall"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/signup_button_selector"
+                    android:onClick="login"
+                    android:text="Login"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLoginWithFB"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/check_in_button_height"
+                android:layout_marginTop="@dimen/padding_xxsmall"
+                android:background="@drawable/facebook_button_selector"
+                android:drawableLeft="@drawable/facebook_icon_white"
+                android:onClick="facebookButtonClicked"
+                android:paddingLeft="@dimen/padding_small"
+                android:text="Login with Facebook"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_xxsmall"
+                android:clickable="true"
+                android:onClick="forgotEmail"
+                android:padding="@dimen/padding_small"
+                android:text="@string/forgot_password"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liRegistor"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="@color/login"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

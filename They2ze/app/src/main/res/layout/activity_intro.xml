@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- <com.merhold.extensiblepageindicator.ExtensiblePageIndicator
+             android:id="@+id/flexibleIndicator"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="bottom|center"
+             android:layout_marginBottom="30dp"
+             app:indicatorActiveColor="#00a8aa"
+             app:indicatorInactiveColor="@color/border_gray"
+             app:indicatorPadding="10dp"
+             app:indicatorRadius="5dp" />-->
+
+
+       <!-- <Button
+            android:id="@+id/btnProceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/next_button_introscreen"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/padding_standard"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />-->
+    </FrameLayout>
+</LinearLayout>

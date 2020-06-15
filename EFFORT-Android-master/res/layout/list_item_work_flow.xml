@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/typeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="@dimen/label_margin_left"
+        android:layout_marginRight="@dimen/label_margin_right"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/work_flow_item_type"
+        android:src="@drawable/ic_drawer_work_flow" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="?android:attr/textAppearanceMediumInverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="false" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/extraInfoTextView"
+            style="?android:attr/textAppearanceSmallInverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="false" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/timeTextView"
+            style="?android:attr/textAppearanceSmallInverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="false" >
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/syncImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="@dimen/label_margin_left"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/sync_pending_indicator" />
+
+    <ImageView
+        android:id="@+id/nextImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="@dimen/label_margin_right"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/clickable"
+        android:src="@drawable/ic_navigation_next_item_inverse" />
+
+</LinearLayout>

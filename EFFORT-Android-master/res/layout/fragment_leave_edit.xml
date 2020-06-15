@@ -1,0 +1,119 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/from" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/startDateButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/edit_margin_bottom"
+                android:layout_marginLeft="@dimen/edit_margin_left"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="@dimen/edit_margin_top"
+                android:layout_weight="3"
+                android:onClick="onStartDateButtonClick" />
+
+            <Button
+                android:id="@+id/startTimeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/edit_margin_bottom"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="@dimen/edit_margin_right"
+                android:layout_marginTop="@dimen/edit_margin_top"
+                android:layout_weight="2"
+                android:onClick="onStartTimeButtonClick" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/to" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/endDateButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/edit_margin_bottom"
+                android:layout_marginLeft="@dimen/edit_margin_left"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="@dimen/edit_margin_top"
+                android:layout_weight="3"
+                android:onClick="onEndDateButtonClick" />
+
+            <Button
+                android:id="@+id/endTimeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/edit_margin_bottom"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="@dimen/edit_margin_right"
+                android:layout_marginTop="@dimen/edit_margin_top"
+                android:layout_weight="2"
+                android:onClick="onEndTimeButtonClick" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/separator_height"
+            android:background="@color/separatorBackground" />
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/label_margin_bottom"
+            android:layout_marginLeft="@dimen/label_margin_left"
+            android:layout_marginRight="@dimen/label_margin_right"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/your_remarks" />
+
+        <EditText
+            android:id="@+id/employeeRemarksEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/edit_margin_bottom"
+            android:layout_marginLeft="@dimen/edit_margin_left"
+            android:layout_marginRight="@dimen/edit_margin_right"
+            android:layout_marginTop="@dimen/edit_margin_top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:hint="@string/recommended"
+            android:maxLength="500" />
+    </LinearLayout>
+
+</ScrollView>

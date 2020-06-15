@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="4dp" >
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="?android:attr/textAppearanceMediumInverse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textIsSelectable="false" >
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/viewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/open"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/ic_action_about"
+        android:textIsSelectable="false" />
+
+</LinearLayout>

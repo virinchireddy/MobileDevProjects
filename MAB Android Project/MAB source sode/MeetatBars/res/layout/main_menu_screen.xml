@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="6" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@color/login"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/top_logo_width"
+                android:layout_height="@dimen/top_logo_height"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5.5"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivInfo"
+                android:layout_width="@dimen/check_in_button_height"
+                android:layout_height="@dimen/check_in_button_height"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/padding_small"
+                android:src="@drawable/info_icon" />
+
+            <TextView
+                android:id="@+id/tvLookingFor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:gravity="center"
+                android:text="What are you looking for?"
+                android:textColor="#d45a4c"
+                android:textSize="@dimen/text_size_xxxlarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/liBars"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/padding_standard"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/main_menu_button_selector"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_standard" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bars_menu" />
+
+                    <TextView
+                        android:id="@+id/tvBars"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_standard"
+                        android:text="Bars"
+                        android:textColor="#143d4d"
+                        android:textSize="@dimen/text_size_large" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liPromotions"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/padding_standard"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/main_menu_button_selector"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_standard" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/promotions_menu" />
+
+                    <TextView
+                        android:id="@+id/tvPromotions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_standard"
+                        android:gravity="center_horizontal"
+                        android:text="Promo-events"
+                        android:textColor="#143d4d"
+                        android:textSize="@dimen/text_size_large" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/liMeetFriends"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/padding_standard"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/main_menu_button_selector"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_standard" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/meet_friends_menu" />
+
+                    <TextView
+                        android:id="@+id/tvMeetFriends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_standard"
+                        android:text="Meet friends"
+                        android:textColor="#143d4d"
+                        android:textSize="@dimen/text_size_large" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liMeetOthers"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/padding_standard"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/main_menu_button_selector"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_standard" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/meet_others_menu" />
+
+                    <TextView
+                        android:id="@+id/tvMeetOthers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_standard"
+                        android:gravity="center_horizontal"
+                        android:text="Meet others"
+                        android:textColor="#143d4d"
+                        android:textSize="@dimen/text_size_large" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivInstructionsOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/overlay"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/padding_small"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_round_corners"
+        android:ems="10"
+        android:hint="Enter unique user name"
+        android:padding="@dimen/padding_small"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_standard" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/liAvilable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/tick" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:text="Available"
+            android:textSize="@dimen/text_size_standard" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liUnAvilable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/cross" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Unavailable" 
+            android:textSize="@dimen/text_size_standard"/>
+      </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCheckAvilability"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/check_in_button_height"
+        android:layout_marginTop="@dimen/padding_small"
+        android:background="@color/light_blue"
+        android:text="Check Availability"
+        android:textSize="@dimen/text_size_standard" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/check_in_button_height"
+            android:layout_marginRight="@dimen/padding_xxsmall"
+            android:layout_marginTop="@dimen/padding_small"
+            android:layout_weight="0.5"
+            android:background="@drawable/light_blue_button_selector"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_standard" />
+
+        <Button
+            android:id="@+id/btnRegistor"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/check_in_button_height"
+            android:layout_marginLeft="@dimen/padding_xxsmall"
+            android:layout_marginTop="@dimen/padding_small"
+            android:layout_weight="0.5"
+            android:background="@drawable/light_blue_button_selector"
+            android:text="Update"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_standard" />
+    </LinearLayout>
+
+</LinearLayout>

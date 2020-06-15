@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/editCustomer"
+        android:icon="@drawable/ic_content_edit"
+        android:orderInCategory="100"
+        app:showAsAction="always|withText"
+        android:title="@string/edit"/>
+    <item
+        android:id="@+id/viewJobHistory"
+        android:icon="@drawable/ic_job_history"
+        android:orderInCategory="101"
+        app:showAsAction="always|withText"
+        android:title="@string/job_history"/>
+    <item
+        android:id="@+id/addJobToCustomer"
+        android:icon="@drawable/ic_content_new"
+        android:orderInCategory="102"
+        app:showAsAction="always|withText"
+        android:title="@string/add_job"/>
+    <item
+        android:id="@+id/saveCustomer"
+        android:icon="@drawable/ic_content_save"
+        android:orderInCategory="103"
+        app:showAsAction="always|withText"
+        android:title="@string/save"/>
+    <item
+        android:id="@+id/discardCustomer"
+        android:icon="@drawable/ic_content_discard"
+        android:orderInCategory="104"
+        app:showAsAction="always|withText"
+        android:title="@string/discard"/>
+
+</menu>
